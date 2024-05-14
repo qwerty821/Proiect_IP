@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proiect_IP", "Proiect_IP\Proiect_IP.csproj", "{D96F8857-9503-4DD4-A8AB-2D06B2740159}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pages", "Pages\Pages.csproj", "{FFF11E96-9B0C-43C3-AD9C-9290FDE1E8CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources", "Resources\Resources.csproj", "{B07392E8-3574-46A8-BEB2-30545339806B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D96F8857-9503-4DD4-A8AB-2D06B2740159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D96F8857-9503-4DD4-A8AB-2D06B2740159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D96F8857-9503-4DD4-A8AB-2D06B2740159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D96F8857-9503-4DD4-A8AB-2D06B2740159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFF11E96-9B0C-43C3-AD9C-9290FDE1E8CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFF11E96-9B0C-43C3-AD9C-9290FDE1E8CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFF11E96-9B0C-43C3-AD9C-9290FDE1E8CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFF11E96-9B0C-43C3-AD9C-9290FDE1E8CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B07392E8-3574-46A8-BEB2-30545339806B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B07392E8-3574-46A8-BEB2-30545339806B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B07392E8-3574-46A8-BEB2-30545339806B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B07392E8-3574-46A8-BEB2-30545339806B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09D2335A-2BDA-48A2-98C1-6C3E720327BA}
+	EndGlobalSection
+EndGlobal
