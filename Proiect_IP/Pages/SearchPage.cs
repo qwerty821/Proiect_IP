@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TMDbLib.Client;
 using TMDbLib.Objects.Movies;
-using static Proiect_IP.Resources;
+using static Proiect_IP.Res;
 namespace Pages
 {
     public partial class SearchPage : Form
@@ -23,16 +23,11 @@ namespace Pages
             InitializeComponent();
         }
 
-        public void SetCallBack(Action<object> func)
+        public void SetCallBack(Action<object, States> action)
         {
-            searchButton.Click += delegate { func(this); };
+            searchButton.Click += delegate { action(this, States.Movies_ListState); };
         }
 
-
-        //
- 
-
-        //
         private void searchButton_Click(object sender, EventArgs e)
         {
             
@@ -49,7 +44,7 @@ namespace Pages
         private void SaveToJson(object movies)
         {
             string JsonResult = JsonConvert.SerializeObject(movies);
-            Resources.WriteMovies(JsonResult);
+            Res.WriteMovies(JsonResult);
             
         }
     }

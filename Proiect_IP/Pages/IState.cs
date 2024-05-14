@@ -12,5 +12,7 @@ namespace Pages
         void Show();
 
         Form GetForm();
+
+        void SetCallBack(Action<object, States> action);
     }
 }

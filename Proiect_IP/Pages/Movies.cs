@@ -5,18 +5,21 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TMDbLib.Objects.Search;
-
+using static Proiect_IP.Res;
 namespace Pages
 {
     public partial class Movies : Form
     {
 
         private List<SearchMovie> list;
+
+        private Action<object, States> _callBackFunc;
 
         public Movies()
         {
@@ -25,8 +28,7 @@ namespace Pages
 
         private void Movies_Load(object sender, EventArgs e)
         {
-            list = Resources.GetMovies();
-
+            list = Res.GetMovies();
             displayMovies();
         }
 
@@ -41,8 +43,13 @@ namespace Pages
                 moviePanel.Size = new Size(360, 600);
                 moviePanel.Padding = new Padding(25);
                 moviePanel.BorderStyle = BorderStyle.FixedSingle;
-                
 
+                moviePanel.Click += delegate { SelectedMovie(movie); };
+
+                moviePanel.Click += delegate {
+                    _callBackFunc(this, States.Movie_InfoState);
+                   
+                };
 
                 Label title = new Label();
                 title.Text = movie.Title;
@@ -52,8 +59,15 @@ namespace Pages
                 title.Height = 70;
                 title.BorderStyle = BorderStyle.FixedSingle;
                 PictureBox pictureBox = new PictureBox();
+
+                pictureBox.Click += delegate { SelectedMovie(movie); };
+
+                pictureBox.Click += delegate {
+                    _callBackFunc(this, States.Movie_InfoState);
+                };
+
                 pictureBox.Size = new Size(300, 450);
-                pictureBox.ImageLocation = Resources.imageUrl + movie.PosterPath;
+                pictureBox.ImageLocation = Res.imageUrl + movie.PosterPath;
                 pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
 
 
@@ -62,7 +76,17 @@ namespace Pages
 
                 flowLayoutPanel1.Controls.Add(moviePanel);
             }
- 
         }
+
+        public void SetCallBack(Action<object, States> action)
+        {
+           _callBackFunc = action;
+        }
+
+        private void SelectedMovie(object sender)
+        {
+            Res.SetSelectedMovie(((SearchMovie)sender).Id);
+        }
+
     }
 }

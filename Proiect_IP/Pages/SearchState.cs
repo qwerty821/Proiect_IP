@@ -21,7 +21,7 @@ namespace Pages
 
         public Form GetForm() => _searchPage;
 
-        public void SetCallBack(Action<object> func)
+        public void SetCallBack(Action<object, States> func)
         {
             _searchPage.SetCallBack(func);
         }

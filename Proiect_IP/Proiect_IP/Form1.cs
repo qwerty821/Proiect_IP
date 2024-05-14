@@ -29,7 +29,7 @@ namespace Proiect_IP
 
             SearchState searchState = new SearchState();
             
-            Action<object> action = changeState;
+            Action<object, Pages.States> action = changeState;
             searchState.SetCallBack(action);
             
             page.SetState(searchState);
@@ -43,11 +43,29 @@ namespace Proiect_IP
             page.Show();
         }
 
-        public void changeState(object sender)
+        public void changeState(object sender, States state)
         {
-            page.SetState(new MoviesListState());
-            ((Form)sender).Hide();
-            page.Show();
+            try
+            {
+                IState newState = null;
+                switch (state)
+                {
+                    case States.Search_PageState: newState = new SearchState(); break;
+                    case States.Movies_ListState: newState = new MoviesListState(); break;
+                    case States.Movie_InfoState: newState = new MovieInfoState(); break;
+                    default: return;
+                }
+
+                newState.SetCallBack(changeState);
+
+                page.SetState(newState);
+                ((Form)sender).Hide();
+                page.Show();
+                 
+            } catch(Exception ex)
+            {
+                MessageBox.Show("Starea este invalida");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -7,21 +7,21 @@ using System.Windows.Forms;
 
 namespace Pages
 {
-    public class MoviesListState : IState
+    public  class MovieInfoState : IState
     {
-        Movies _movies;
+       MovieInfo _movie;
 
-        public MoviesListState()
+        public MovieInfoState()
         {
-            _movies = new Movies();
+            _movie = new MovieInfo();
         }
-        public Form GetForm() => _movies;
+        public Form GetForm() => _movie;
 
         public void SetCallBack(Action<object, States> action)
         {
-            _movies.SetCallBack(action);
+            _movie.SetCallBack(action);
         }
 
-        public void Show() => _movies.Show();
+        public void Show() => _movie.Show();
     }
 }

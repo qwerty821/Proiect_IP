@@ -112,6 +112,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MovieInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieInfo.Designer.cs">
+      <DependentUpon>MovieInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovieInfoState.cs" />
     <Compile Include="Movies.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,8 +136,12 @@
       <DependentUpon>SearchPage.cs</DependentUpon>
     </Compile>
     <Compile Include="SearchState.cs" />
+    <Compile Include="States.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="MovieInfo.resx">
+      <DependentUpon>MovieInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Movies.resx">
       <DependentUpon>Movies.cs</DependentUpon>
     </EmbeddedResource>
@@ -144,7 +155,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Resources\Resources.csproj">
-      <Project>{b07392e8-3574-46a8-beb2-30545339806b}</Project>
+      <Project>{B07392E8-3574-46A8-BEB2-30545339806B}</Project>
       <Name>Resources</Name>
     </ProjectReference>
   </ItemGroup>
