@@ -20,7 +20,7 @@ namespace Proiect_IP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
+            //test GIT
             Application.Run(new Form1());
         }
     }
