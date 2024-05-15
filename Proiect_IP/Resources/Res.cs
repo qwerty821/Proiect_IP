@@ -46,7 +46,6 @@ namespace Proiect_IP
         {
             SelectedMovie = id;
         }
-
         public static SearchMovie GetSelectedMovie()
         {
             List<SearchMovie> list = GetMovies();
