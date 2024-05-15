@@ -14,6 +14,8 @@ namespace Pages
 {
     public partial class MovieInfo : Form
     {
+        private Action<object, States> _callBackFunc;
+
         public MovieInfo()
         {
             InitializeComponent();
@@ -21,7 +23,8 @@ namespace Pages
 
         public void SetCallBack(Action<object, States> action)
         {
-
+            _callBackFunc = action;
+            button1.Click += delegate { action(this, States.Search_PageState); };
         }
 
         private void MovieInfo_Load(object sender, EventArgs e)
@@ -35,6 +38,10 @@ namespace Pages
             year.Text = movie.ReleaseDate.ToString();
             despre.Text = movie.Overview;
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
 
         }
     }

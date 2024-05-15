@@ -29,7 +29,7 @@ namespace Pages
         public void SetCallBack(Action<object, States> action)
         {
             searchButton.Click += delegate { action(this, States.Movies_ListState); };
-
+            _callBackFunc = action;
         }
 
         private void searchButton_Click(object sender, EventArgs e)
@@ -55,8 +55,8 @@ namespace Pages
         {
             TMDbClient client = new TMDbClient("ba989c6148c4f9e4f7456f4d3ba6a8b7");
             var mov = client.GetMoviePopularListAsync().Result;
-            var list = mov.Results.ToList();
-
+            var list = mov.Results;
+            SaveToJson(list);
 
             foreach (SearchMovie movie in list)
             {

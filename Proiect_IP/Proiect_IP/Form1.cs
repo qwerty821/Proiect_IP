@@ -28,9 +28,8 @@ namespace Proiect_IP
             page = new Page();
 
             SearchState searchState = new SearchState();
-            
-            Action<object, Pages.States> action = changeState;
-            searchState.SetCallBack(action);
+
+            searchState.SetCallBack(changeState);
             
             page.SetState(searchState);
 

@@ -48,7 +48,6 @@ namespace Pages
 
                 moviePanel.Click += delegate {
                     _callBackFunc(this, States.Movie_InfoState);
-                   
                 };
 
                 Label title = new Label();
