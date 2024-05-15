@@ -29,10 +29,11 @@ namespace Pages
             SearchMovie movie = Res.GetSelectedMovie();
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.ImageLocation = Res.imageUrl + movie.PosterPath;
-
+            
             title.Text = movie.Title;
+            rating.Text = $"{movie.VoteAverage} ({movie.VoteCount})";
             year.Text = movie.ReleaseDate.ToString();
-
+            despre.Text = movie.Overview;
             
 
         }
