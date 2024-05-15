@@ -143,3 +143,40 @@ D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Pages\bin\Debug\System.ValueTuple.xml
 D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Pages\bin\Debug\TMDbLib.xml
 D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Pages\obj\Debug\Pages.csproj.CopyComplete
 D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Pages\obj\Debug\Pages.MovieInfo.resources
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\Pages.dll.config
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\Pages.dll
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\Pages.pdb
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\Resources.dll
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\System.Buffers.dll
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\System.Memory.dll
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\System.Text.Json.dll
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\System.ValueTuple.dll
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\TMDbLib.dll
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\Resources.pdb
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\Resources.dll.config
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\System.Buffers.xml
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\System.Memory.xml
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\System.Text.Json.xml
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\System.ValueTuple.xml
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\bin\Debug\TMDbLib.xml
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\obj\Debug\Pages.csproj.AssemblyReference.cache
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\obj\Debug\Pages.MovieInfo.resources
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\obj\Debug\Pages.Movies.resources
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\obj\Debug\Pages.SearchPage.resources
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\obj\Debug\Pages.csproj.GenerateResource.cache
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\obj\Debug\Pages.csproj.CoreCompileInputs.cache
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\obj\Debug\Pages.csproj.CopyComplete
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\obj\Debug\Pages.dll
+C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Pages\obj\Debug\Pages.pdb
