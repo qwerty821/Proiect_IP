@@ -16,7 +16,7 @@ namespace Proiect_IP
 {
     public partial class Form1 : Form
     {
-        static Page page;
+        Page page;
         public Form1()
         {
             InitializeComponent();

@@ -11,6 +11,9 @@ using TMDbLib.Objects.Search;
 
 namespace Proiect_IP
 {
+    /// <summary>
+    /// Clasa pentru lucrul cu resursele aplicatiei
+    /// </summary>
     public static class Res
     {
         public static string baseDirectory { get; }
@@ -23,6 +26,9 @@ namespace Proiect_IP
 
         private static int SelectedMovie;
 
+        /// <summary>
+        /// Constructorul clasei pentru resurse
+        /// </summary>
         static Res()
         {
             baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
@@ -30,13 +36,19 @@ namespace Proiect_IP
         
             ResDirectory = baseDirectory + "Res\\";
         }
-
+        /// <summary>
+        /// Functia pentru salvarea filmelor intru-un fisier cu formatul json
+        /// </summary>
+        /// <param name="movies"></param>
         public static void WriteMovies(object movies)
         {
             string JsonResult = JsonConvert.SerializeObject(movies);
             File.WriteAllText(ResDirectory + moviesFile, JsonResult);
         }
-
+        /// <summary>
+        /// Functia care returneaza filmele din fisierul json
+        /// </summary>
+        /// <returns>O lista de tipul List<SearchMovie></returns>
         public static List<SearchMovie> GetMovies()
         {
             string text = File.ReadAllText(ResDirectory + moviesFile);
@@ -44,11 +56,19 @@ namespace Proiect_IP
           
             return list;
         }
-
+        /// <summary>
+        /// Functia salveaza intr-o variabila statica filmul curent 
+        /// </summary>
+        /// <param name="id"></param>
         public static void SetSelectedMovie(int id)
         {
             SelectedMovie = id;
         }
+
+        /// <summary>
+        /// Functia returneaza filmul curent care este selectat
+        /// </summary>
+        /// <returns>Un obiect de tipul SearchMovie</returns>
         public static SearchMovie GetSelectedMovie()
         {
             List<SearchMovie> list = GetMovies();
@@ -61,14 +81,10 @@ namespace Proiect_IP
             }
             return null;
         }
-
-        public static int GetSelectedMovieId()
-        {
-            return SelectedMovie;
-        }
-
-
-
+        /// <summary>
+        /// Functia salveaza Ratingul filmului curent intr-un fisier json
+        /// </summary>
+        /// <param name="rating"></param>
         public static void SaveRating(int rating)
         {
             RatingObj obj = new RatingObj(SelectedMovie, rating);
@@ -125,7 +141,10 @@ namespace Proiect_IP
                 this.Rating = rating;
             }
         }
-
+        /// <summary>
+        /// Functia returneaza ratingul filmului curent 
+        /// </summary>
+        /// <returns>Ratingul sau un string gol</returns>
         public static string GetRating()
         {
             string text = File.ReadAllText(ResDirectory + ratingFiles);

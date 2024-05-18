@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Pages
 {
+    /// <summary>
+    /// Contine starile posibile ale aplicatiei
+    /// </summary>
     public enum States
     {
         Search_PageState,

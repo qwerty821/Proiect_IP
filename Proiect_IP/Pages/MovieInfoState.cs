@@ -7,10 +7,10 @@ using System.Windows.Forms;
 
 namespace Pages
 {
+
     public  class MovieInfoState : IState
     {
-       MovieInfo _movie;
-
+        MovieInfo _movie;
         public MovieInfoState()
         {
             _movie = new MovieInfo();
