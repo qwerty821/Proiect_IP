@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TMDbLib.Objects.Movies;
 using TMDbLib.Objects.Search;
 
 namespace Proiect_IP
@@ -18,6 +19,7 @@ namespace Proiect_IP
         public static string imageUrl { get; } =  "https://image.tmdb.org/t/p/w500/";
 
         public static string moviesFile { get; } = "movies.json";
+        public static string ratingFiles { get; } = "ratings.json";
 
         private static int SelectedMovie;
 
@@ -29,9 +31,10 @@ namespace Proiect_IP
             ResDirectory = baseDirectory + "Res\\";
         }
 
-        public static void WriteMovies(string text)
+        public static void WriteMovies(object movies)
         {
-            File.WriteAllText(ResDirectory + moviesFile, text);
+            string JsonResult = JsonConvert.SerializeObject(movies);
+            File.WriteAllText(ResDirectory + moviesFile, JsonResult);
         }
 
         public static List<SearchMovie> GetMovies()
@@ -51,13 +54,94 @@ namespace Proiect_IP
             List<SearchMovie> list = GetMovies();
             foreach (SearchMovie movie in list)
             {
-                Console.WriteLine(movie.Id);
                 if (movie.Id == SelectedMovie)
                 {
                     return movie;
                 }
             }
             return null;
+        }
+
+        public static int GetSelectedMovieId()
+        {
+            return SelectedMovie;
+        }
+
+
+
+        public static void SaveRating(int rating)
+        {
+            RatingObj obj = new RatingObj(SelectedMovie, rating);
+
+            
+            if (File.Exists(ResDirectory + ratingFiles)) 
+            {
+                string text = File.ReadAllText(ResDirectory + ratingFiles);
+                List<RatingObj> list = JsonConvert.DeserializeObject<List<RatingObj>>(text);
+                if (list == null) {
+                    list = new List<RatingObj>();
+                } 
+                bool exists = false;
+                int index = -1;
+                for (int i = 0; i < list.Count; i++)
+                {
+                    if (list[i].Id == obj.Id)
+                    {
+                        exists = true;
+                        index = i;
+                        break;
+                    }
+                }
+                if (!exists)
+                {
+                    list.Add(obj);
+                } else
+                {
+                    list[index].Rating = rating;
+                }
+
+                string jsonResult = JsonConvert.SerializeObject(list);
+                File.WriteAllText(ResDirectory + ratingFiles, jsonResult);
+
+            } else
+            {
+                string jsonResult = JsonConvert.SerializeObject(obj);
+                File.Create(ResDirectory + ratingFiles);
+                File.WriteAllText(ResDirectory + ratingFiles, jsonResult);
+            }
+           
+            
+
+        }
+
+        public class RatingObj
+        {
+            public int Id;
+            public int Rating;
+
+            public RatingObj(int id, int rating)
+            {
+                this.Id = id;
+                this.Rating = rating;
+            }
+        }
+
+        public static string GetRating()
+        {
+            string text = File.ReadAllText(ResDirectory + ratingFiles);
+            List<RatingObj> list = JsonConvert.DeserializeObject<List<RatingObj>>(text);
+
+            if (list != null)
+            {
+                for (int i = 0; i < list.Count; i++)
+                {
+                    if (SelectedMovie == list[i].Id)
+                    {
+                        return $"{list[i].Rating}";
+                    }
+                }
+            } 
+            return "";
         }
     }
 }

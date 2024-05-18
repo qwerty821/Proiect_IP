@@ -37,12 +37,30 @@ namespace Pages
             rating.Text = $"{movie.VoteAverage} ({movie.VoteCount})";
             year.Text = movie.ReleaseDate.ToString();
             despre.Text = movie.Overview;
-            
+
+            ratingBar.ValueChanged += delegate { changeRating(); };
+
+            string r = Res.GetRating();
+            if (r != "")
+            {
+                setedRating.Visible = true;
+                setedRating.Text = $"Ratingul dat de tine \r\neste {r}";
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
+  
 
+        private void changeRating()
+        {
+            ratingLabel.Text = (ratingBar.Value + 1).ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            setedRating.Visible = true;
+            setedRating.Text = $"Ratingul dat de tine \r\neste {(ratingBar.Value + 1)}" ;
+
+            Res.SaveRating((ratingBar.Value + 1));
         }
     }
 }
