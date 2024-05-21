@@ -29,21 +29,32 @@
         private void InitializeComponent()
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.buttonAcasa = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 74);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1684, 1000);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1463, 1000);
             this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // buttonAcasa
+            // 
+            this.buttonAcasa.Location = new System.Drawing.Point(12, 12);
+            this.buttonAcasa.Name = "buttonAcasa";
+            this.buttonAcasa.Size = new System.Drawing.Size(123, 42);
+            this.buttonAcasa.TabIndex = 17;
+            this.buttonAcasa.Text = "Acasa";
+            this.buttonAcasa.UseVisualStyleBackColor = true;
             // 
             // Movies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1708, 1048);
+            this.ClientSize = new System.Drawing.Size(1478, 944);
+            this.Controls.Add(this.buttonAcasa);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Movies";
             this.Text = "Movies";
@@ -55,5 +66,6 @@
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button buttonAcasa;
     }
 }

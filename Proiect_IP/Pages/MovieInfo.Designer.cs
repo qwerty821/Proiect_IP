@@ -29,7 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.ratingLabel = new System.Windows.Forms.Label();
+            this.setedRating = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.ratingBar = new System.Windows.Forms.TrackBar();
             this.button1 = new System.Windows.Forms.Button();
             this.despre = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,14 +43,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.title = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ratingBar = new System.Windows.Forms.TrackBar();
-            this.button2 = new System.Windows.Forms.Button();
-            this.setedRating = new System.Windows.Forms.Label();
-            this.ratingLabel = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.info3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ratingBar)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ratingBar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -57,7 +58,6 @@
             this.panel1.Controls.Add(this.setedRating);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.ratingBar);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.despre);
             this.panel1.Controls.Add(this.label1);
@@ -69,18 +69,50 @@
             this.panel1.Size = new System.Drawing.Size(1274, 872);
             this.panel1.TabIndex = 11;
             // 
-            // label4
+            // ratingLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(374, 750);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 20);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Comentarii";
+            this.ratingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ratingLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.ratingLabel.Location = new System.Drawing.Point(192, 694);
+            this.ratingLabel.Name = "ratingLabel";
+            this.ratingLabel.Size = new System.Drawing.Size(109, 37);
+            this.ratingLabel.TabIndex = 21;
+            this.ratingLabel.Text = "0";
+            this.ratingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // setedRating
+            // 
+            this.setedRating.AutoSize = true;
+            this.setedRating.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.setedRating.ForeColor = System.Drawing.Color.SeaGreen;
+            this.setedRating.Location = new System.Drawing.Point(75, 765);
+            this.setedRating.Name = "setedRating";
+            this.setedRating.Size = new System.Drawing.Size(79, 29);
+            this.setedRating.TabIndex = 20;
+            this.setedRating.Text = "label5";
+            this.setedRating.Visible = false;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(56, 694);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(119, 37);
+            this.button2.TabIndex = 19;
+            this.button2.Text = "Confirma";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // ratingBar
+            // 
+            this.ratingBar.Location = new System.Drawing.Point(37, 619);
+            this.ratingBar.Maximum = 9;
+            this.ratingBar.Name = "ratingBar";
+            this.ratingBar.Size = new System.Drawing.Size(300, 69);
+            this.ratingBar.TabIndex = 18;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(37, 47);
+            this.button1.Location = new System.Drawing.Point(37, 52);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 42);
             this.button1.TabIndex = 16;
@@ -115,6 +147,8 @@
             this.tableLayoutPanel1.Controls.Add(this.rating, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label7, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.info3, 1, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(458, 196);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -185,52 +219,31 @@
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
-            // ratingBar
+            // label7
             // 
-            this.ratingBar.Location = new System.Drawing.Point(37, 619);
-            this.ratingBar.Maximum = 9;
-            this.ratingBar.Name = "ratingBar";
-            this.ratingBar.Size = new System.Drawing.Size(300, 69);
-            this.ratingBar.TabIndex = 18;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(3, 98);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(52, 29);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Tip";
             // 
-            // button2
+            // info3
             // 
-            this.button2.Location = new System.Drawing.Point(56, 694);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 37);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "Confirma";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // setedRating
-            // 
-            this.setedRating.AutoSize = true;
-            this.setedRating.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.setedRating.ForeColor = System.Drawing.Color.SeaGreen;
-            this.setedRating.Location = new System.Drawing.Point(75, 765);
-            this.setedRating.Name = "setedRating";
-            this.setedRating.Size = new System.Drawing.Size(79, 29);
-            this.setedRating.TabIndex = 20;
-            this.setedRating.Text = "label5";
-            this.setedRating.Visible = false;
-            // 
-            // ratingLabel
-            // 
-            this.ratingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ratingLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ratingLabel.Location = new System.Drawing.Point(192, 694);
-            this.ratingLabel.Name = "ratingLabel";
-            this.ratingLabel.Size = new System.Drawing.Size(109, 37);
-            this.ratingLabel.TabIndex = 21;
-            this.ratingLabel.Text = "0";
-            this.ratingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.info3.AutoSize = true;
+            this.info3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.info3.Location = new System.Drawing.Point(204, 98);
+            this.info3.Name = "info3";
+            this.info3.Size = new System.Drawing.Size(65, 29);
+            this.info3.TabIndex = 8;
+            this.info3.Text = "1111";
             // 
             // MovieInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1479, 944);
+            this.ClientSize = new System.Drawing.Size(1478, 944);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MovieInfo";
@@ -238,17 +251,16 @@
             this.Load += new System.EventHandler(this.MovieInfo_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ratingBar)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ratingBar)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label despre;
         private System.Windows.Forms.Label label1;
@@ -263,5 +275,7 @@
         private System.Windows.Forms.TrackBar ratingBar;
         private System.Windows.Forms.Label setedRating;
         private System.Windows.Forms.Label ratingLabel;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label info3;
     }
 }

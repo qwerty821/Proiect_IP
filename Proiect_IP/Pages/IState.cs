@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,5 +15,10 @@ namespace Pages
         Form GetForm();
 
         void SetCallBack(Action<object, States> action);
+
+        
+        void SetLocation(Point p);
+        Point GetLocation();
+
     }
 }

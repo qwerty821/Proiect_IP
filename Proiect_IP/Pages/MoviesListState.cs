@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,5 +24,10 @@ namespace Pages
         }
 
         public void Show() => _movies.Show();
+
+        public void SetLocation(Point p) => _movies.SetLocation(p);
+        
+        public Point GetLocation() =>  _movies.GetLocation();
+         
     }
 }

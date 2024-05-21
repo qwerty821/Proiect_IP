@@ -57,7 +57,14 @@ namespace Proiect_IP
 
                 newState.SetCallBack(changeState);
 
+                Point p = page.GetLocation();
+
+                Console.WriteLine(p);
+
                 page.SetState(newState);
+                
+                page.SetLocation(p);
+                
                 ((Form)sender).Hide();
                 page.Show();
                  

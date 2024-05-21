@@ -24,6 +24,7 @@ namespace Pages
         public SearchPage()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
         }
 
         public void SetCallBack(Action<object, States> action)
@@ -102,5 +103,9 @@ namespace Pages
         {
             Res.SetSelectedMovie(((SearchMovie)sender).Id);
         }
+
+        public void SetLocation(Point p) => this.Location = p;
+        public Point GetLocation() => this.Location;
+
     }
 }

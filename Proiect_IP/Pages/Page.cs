@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,8 +12,9 @@ namespace Pages
     /// </summary>
     public class Page
     {
-        private IState _state;
 
+        private IState _state;
+ 
         /// <summary>
         /// Functia seteaza noua stare
         /// </summary>
@@ -22,15 +24,25 @@ namespace Pages
             this._state = state;
         }
 
+
         /// <summary>
-        /// Functia face ca stare sa fie vizibila
+        /// Functia face ca starea sa fie vizibila
         /// </summary>
         public void Show() => this._state.Show();
 
         /// <summary>
-        /// Functia returneaza stare curenta
+        /// Functia returneaza starea precedenta
         /// </summary>
        
-        public IState State => this._state;
+       
+
+        public void SetLocation(Point p)
+        {
+            _state.SetLocation(p);
+        }
+        public Point GetLocation()
+        {
+            return _state.GetLocation();
+        }
     }
 }

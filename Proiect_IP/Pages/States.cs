@@ -14,5 +14,6 @@ namespace Pages
         Search_PageState,
         Movies_ListState,
         Movie_InfoState,
+        Previous_State
     }
 }

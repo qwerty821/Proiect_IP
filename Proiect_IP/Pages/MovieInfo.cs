@@ -19,12 +19,14 @@ namespace Pages
         public MovieInfo()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
         }
 
         public void SetCallBack(Action<object, States> action)
         {
             _callBackFunc = action;
             button1.Click += delegate { action(this, States.Search_PageState); };
+
         }
 
         private void MovieInfo_Load(object sender, EventArgs e)
@@ -35,7 +37,8 @@ namespace Pages
             
             title.Text = movie.Title;
             rating.Text = $"{movie.VoteAverage} ({movie.VoteCount})";
-            year.Text = movie.ReleaseDate.ToString();
+            year.Text = movie.ReleaseDate.ToString().Split(' ')[0];
+            info3.Text = movie.MediaType.ToString();
             despre.Text = movie.Overview;
 
             ratingBar.ValueChanged += delegate { changeRating(); };
@@ -62,5 +65,10 @@ namespace Pages
 
             Res.SaveRating((ratingBar.Value + 1));
         }
+        public void SetLocation(Point p) => this.Location = p;
+        
+        public Point GetLocation() => this.Location;
+        
+
     }
 }

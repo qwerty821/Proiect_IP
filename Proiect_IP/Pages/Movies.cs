@@ -24,6 +24,7 @@ namespace Pages
         public Movies()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.Manual;
         }
 
         private void Movies_Load(object sender, EventArgs e)
@@ -40,7 +41,7 @@ namespace Pages
                 FlowLayoutPanel moviePanel = new FlowLayoutPanel();
                 moviePanel.FlowDirection = FlowDirection.TopDown;
                 //moviePanel.AutoSize = true;
-                moviePanel.Size = new Size(360, 600);
+                moviePanel.Size = new Size(300, 500);
                 moviePanel.Padding = new Padding(25);
                 moviePanel.BorderStyle = BorderStyle.FixedSingle;
 
@@ -48,13 +49,15 @@ namespace Pages
 
                 moviePanel.Click += delegate {
                     _callBackFunc(this, States.Movie_InfoState);
+
                 };
+
 
                 Label title = new Label();
                 title.Text = movie.Title;
                 title.TextAlign = ContentAlignment.MiddleCenter;
                 title.Font = new Font("Microsoft Sans Serif", 20);
-                title.Width = 300;
+                title.Width = 240;
                 title.Height = 70;
                 title.BorderStyle = BorderStyle.FixedSingle;
                 PictureBox pictureBox = new PictureBox();
@@ -65,7 +68,7 @@ namespace Pages
                     _callBackFunc(this, States.Movie_InfoState);
                 };
 
-                pictureBox.Size = new Size(300, 450);
+                pictureBox.Size = new Size(240, 350);
                 pictureBox.ImageLocation = Res.imageUrl + movie.PosterPath;
                 pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
 
@@ -80,12 +83,18 @@ namespace Pages
         public void SetCallBack(Action<object, States> action)
         {
            _callBackFunc = action;
+            buttonAcasa.Click += delegate { action(this, States.Search_PageState); };
+           
         }
 
         private void SelectedMovie(object sender)
         {
             Res.SetSelectedMovie(((SearchMovie)sender).Id);
         }
+
+        public void SetLocation(Point p) => this.Location = p;
+        public Point GetLocation() => this.Location;
+
 
     }
 }
