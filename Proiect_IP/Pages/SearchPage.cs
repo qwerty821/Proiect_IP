@@ -29,6 +29,10 @@ namespace Pages
 
         public void SetCallBack(Action<object, States> action)
         {
+            if (action == null)
+            {
+                throw new ArgumentNullException("action");
+            }
             searchButton.Click += delegate { action(this, States.Movies_ListState); };
             _callBackFunc = action;
         }

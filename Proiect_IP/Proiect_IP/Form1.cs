@@ -25,15 +25,21 @@ namespace Proiect_IP
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            page = new Page();
+            try
+            {
+                page = new Page();
 
-            SearchState searchState = new SearchState();
+                SearchState searchState = new SearchState();
 
-            searchState.SetCallBack(changeState);
-            
-            page.SetState(searchState);
+                searchState.SetCallBack(changeState);
 
-            this.Shown += delegate { FirstState(); };
+                page.SetState(searchState);
+
+                this.Shown += delegate { FirstState(); };
+            } catch(Exception ex)
+            {
+                MessageBox.Show("Starea este invalida");
+            }
         }
 
         public void FirstState()
@@ -73,10 +79,6 @@ namespace Proiect_IP
                 MessageBox.Show("Starea este invalida");
             }
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
+ 
     }
 }

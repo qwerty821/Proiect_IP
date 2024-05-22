@@ -16,8 +16,8 @@ namespace Proiect_IP
     /// </summary>
     public static class Res
     {
-        public static string baseDirectory { get; }
-        public static string ResDirectory { get; }
+        public static string baseDirectory { get; set; }
+        public static string ResDirectory { get; set; }
 
         public static string imageUrl { get; } =  "https://image.tmdb.org/t/p/w500/";
 
@@ -51,9 +51,17 @@ namespace Proiect_IP
         /// <returns>O lista de tipul List<SearchMovie></returns>
         public static List<SearchMovie> GetMovies()
         {
-            string text = File.ReadAllText(ResDirectory + moviesFile);
+            string text;
+            try
+            {
+                text = File.ReadAllText(ResDirectory + moviesFile);
+            
+            } catch(Exception ex)
+            {
+                throw new FileNotFoundException("Nu exista fisierul sau directorul" + $"{ResDirectory} + {moviesFile}");
+            }
+           
             List<SearchMovie> list = JsonConvert.DeserializeObject<List<SearchMovie>>(text);
-          
             return list;
         }
         /// <summary>
@@ -147,20 +155,30 @@ namespace Proiect_IP
         /// <returns>Ratingul sau un string gol</returns>
         public static string GetRating()
         {
-            string text = File.ReadAllText(ResDirectory + ratingFiles);
-            List<RatingObj> list = JsonConvert.DeserializeObject<List<RatingObj>>(text);
-
-            if (list != null)
+            try
             {
-                for (int i = 0; i < list.Count; i++)
+
+                string text = File.ReadAllText(ResDirectory + ratingFiles);
+                List<RatingObj> list = JsonConvert.DeserializeObject<List<RatingObj>>(text);
+
+                if (list != null)
                 {
-                    if (SelectedMovie == list[i].Id)
+                    for (int i = 0; i < list.Count; i++)
                     {
-                        return $"{list[i].Rating}";
+                        if (SelectedMovie == list[i].Id)
+                        {
+                            return $"{list[i].Rating}";
+                        }
                     }
                 }
-            } 
+            } catch (Exception e)
+            {
+                return "";
+            }
+
             return "";
         }
+
+        
     }
 }

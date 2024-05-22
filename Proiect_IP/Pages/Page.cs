@@ -21,6 +21,10 @@ namespace Pages
         /// <param name="state"></param>
         public void SetState(IState state)
         {
+            if (state == null)
+            {
+                throw new ArgumentNullException("state");
+            }
             this._state = state;
         }
 
@@ -33,8 +37,8 @@ namespace Pages
         /// <summary>
         /// Functia returneaza starea precedenta
         /// </summary>
-       
-       
+
+        public IState GetState() => this._state;
 
         public void SetLocation(Point p)
         {
