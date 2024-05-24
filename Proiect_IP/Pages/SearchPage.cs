@@ -20,13 +20,19 @@ namespace Pages
     public partial class SearchPage : Form
     {
         private Action<object, States> _callBackFunc;
-
+        /// <summary>
+        /// Constructorul Ferestrei SearchPage
+        /// </summary>
         public SearchPage()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.Manual;
         }
 
+        /// <summary>
+        /// Setează funcția de callback care va fi apelată în anumite evenimente.
+        /// </summary>
+        /// <param name="action">Un delegat de tipul Action</param>
         public void SetCallBack(Action<object, States> action)
         {
             if (action == null)
@@ -37,6 +43,12 @@ namespace Pages
             _callBackFunc = action;
         }
 
+        /// <summary>
+        /// 1.Metoda este apelata la apasarea butonului de cautare.
+        /// 2.Se face conexiunea la API si efectueaza cutare filmului introdus de utilizator.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void searchButton_Click(object sender, EventArgs e)
         {
             
@@ -48,12 +60,20 @@ namespace Pages
             var movies = movie.Results;
             SaveToJson(movies);
         }
-
+        /// <summary>
+        /// Salveaza lista de filme intr-un fiser
+        /// </summary>
+        /// <param name="movies"></param>
         private void SaveToJson(object movies)
         {
             Res.WriteMovies(movies);
         }
-
+        /// <summary>
+        /// Metoda este apelata la intilizare ferestrei SearchPage, dupa care se conecteza la API
+        /// si afiseaza ce mai populare filme la moment
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SearchPage_Load(object sender, EventArgs e)
         {
             TMDbClient client = new TMDbClient("ba989c6148c4f9e4f7456f4d3ba6a8b7");
@@ -103,13 +123,32 @@ namespace Pages
                 flowLayoutPanel1.Controls.Add(moviePanel);
             }
         }
+        /// <summary>
+        /// Salveaza in resurse filmul selectat
+        /// </summary>
+        /// <param name="sender"></param>
         private void SelectedMovie(object sender)
         {
             Res.SetSelectedMovie(((SearchMovie)sender).Id);
         }
-
+        /// <summary>
+        /// Seteaza loactia ferestrei
+        /// </summary>
+        /// <param name="p"></param>
         public void SetLocation(Point p) => this.Location = p;
+        /// <summary>
+        /// Returneaza locatia ferestrei
+        /// </summary>
+        /// <returns></returns>
         public Point GetLocation() => this.Location;
+        /// <summary>
+        /// Afiseaza help-ul
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonHelp_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

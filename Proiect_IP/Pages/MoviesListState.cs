@@ -12,21 +12,40 @@ namespace Pages
     {
         Movies _movies;
 
+        /// <summary>
+        /// Constructor pentru clasa MoviesListState.
+        /// Creaza o instanță de tipul Movies.
+        /// </summary>
         public MoviesListState()
         {
             _movies = new Movies();
         }
+        /// <summary>
+        /// Returnează o fereastra MoviesListState
+        /// </summary>
         public Form GetForm() => _movies;
 
-        public void SetCallBack(Action<object, States> action)
-        {
-            _movies.SetCallBack(action);
-        }
+        /// <summary>
+        /// Metoda seteaza o functie de Callback pentru a apela o functi care schimba starea
+        /// </summary>
+        /// <param name="action"></param>
+        public void SetCallBack(Action<object, States> action) => _movies.SetCallBack(action);
 
+        /// <summary>
+        /// Afișează pagina care contine rezultatul cautarii.
+        /// </summary>
         public void Show() => _movies.Show();
-
-        public void SetLocation(Point p) => _movies.SetLocation(p);
         
+        /// <summary>
+        /// Seteaza locatia ferestrei
+        /// </summary>
+        /// <param name="p"></param>
+        public void SetLocation(Point p) => _movies.SetLocation(p);
+
+        /// <summary>
+        /// Returneaza locatia ferestrei
+        /// </summary>
+        /// <param name="p"></param>
         public Point GetLocation() =>  _movies.GetLocation();
          
     }

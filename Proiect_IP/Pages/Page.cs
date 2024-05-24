@@ -16,7 +16,7 @@ namespace Pages
         private IState _state;
  
         /// <summary>
-        /// Functia seteaza noua stare
+        /// Metoda seteaza noua stare
         /// </summary>
         /// <param name="state"></param>
         public void SetState(IState state)
@@ -28,25 +28,27 @@ namespace Pages
             this._state = state;
         }
 
-
         /// <summary>
-        /// Functia face ca starea sa fie vizibila
+        /// Metoda face ca starea sa fie vizibila
         /// </summary>
         public void Show() => this._state.Show();
 
         /// <summary>
-        /// Functia returneaza starea precedenta
+        /// Metoda returneaza starea precedenta
         /// </summary>
 
         public IState GetState() => this._state;
+        /// <summary>
+        /// Metoda seteaza locatia ferestrei corespunzatoare starii curente
+        /// </summary>
+        /// <param name="p"></param>
+        public void SetLocation(Point p) => _state.SetLocation(p);
 
-        public void SetLocation(Point p)
-        {
-            _state.SetLocation(p);
-        }
-        public Point GetLocation()
-        {
-            return _state.GetLocation();
-        }
+        /// <summary>
+        /// Metoda returneaza locatia ferestrei corespunzatoare starii curente
+        /// </summary>
+        /// <param name="p"></param>
+        public Point GetLocation() =>  _state.GetLocation();
+
     }
 }

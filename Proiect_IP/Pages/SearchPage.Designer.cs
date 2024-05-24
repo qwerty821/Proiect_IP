@@ -31,6 +31,7 @@
             this.searchButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.buttonHelp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // searchButton
@@ -62,11 +63,22 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1452, 723);
             this.flowLayoutPanel1.TabIndex = 7;
             // 
+            // buttonHelp
+            // 
+            this.buttonHelp.Location = new System.Drawing.Point(1343, 28);
+            this.buttonHelp.Name = "buttonHelp";
+            this.buttonHelp.Size = new System.Drawing.Size(123, 42);
+            this.buttonHelp.TabIndex = 19;
+            this.buttonHelp.Text = "Ajutor";
+            this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
+            // 
             // SearchPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1478, 944);
+            this.Controls.Add(this.buttonHelp);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.textBox1);
@@ -82,5 +94,6 @@
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button buttonHelp;
     }
 }

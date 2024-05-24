@@ -18,9 +18,7 @@ namespace Proiect_IP
     {
         public static string baseDirectory { get; set; }
         public static string ResDirectory { get; set; }
-
-        public static string imageUrl { get; } =  "https://image.tmdb.org/t/p/w500/";
-
+        public static string imageUrl { get; } = "https://image.tmdb.org/t/p/w500/";
         public static string moviesFile { get; } = "movies.json";
         public static string ratingFiles { get; } = "ratings.json";
 
@@ -33,11 +31,12 @@ namespace Proiect_IP
         {
             baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
             baseDirectory = baseDirectory.Replace("Proiect_IP\\bin\\Debug\\", "") + "\\";
-        
+
             ResDirectory = baseDirectory + "Res\\";
         }
+
         /// <summary>
-        /// Functia pentru salvarea filmelor intru-un fisier cu formatul json
+        /// Metoda pentru salvarea filmelor intru-un fisier cu formatul json
         /// </summary>
         /// <param name="movies"></param>
         public static void WriteMovies(object movies)
@@ -45,8 +44,9 @@ namespace Proiect_IP
             string JsonResult = JsonConvert.SerializeObject(movies);
             File.WriteAllText(ResDirectory + moviesFile, JsonResult);
         }
+
         /// <summary>
-        /// Functia care returneaza filmele din fisierul json
+        /// Metoda care returneaza filmele din fisierul json
         /// </summary>
         /// <returns>O lista de tipul List<SearchMovie></returns>
         public static List<SearchMovie> GetMovies()
@@ -55,17 +55,18 @@ namespace Proiect_IP
             try
             {
                 text = File.ReadAllText(ResDirectory + moviesFile);
-            
-            } catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw new FileNotFoundException("Nu exista fisierul sau directorul" + $"{ResDirectory} + {moviesFile}");
             }
-           
+
             List<SearchMovie> list = JsonConvert.DeserializeObject<List<SearchMovie>>(text);
             return list;
         }
+
         /// <summary>
-        /// Functia salveaza intr-o variabila statica filmul curent 
+        /// Metoda salveaza intr-o variabila statica filmul curent
         /// </summary>
         /// <param name="id"></param>
         public static void SetSelectedMovie(int id)
@@ -74,7 +75,7 @@ namespace Proiect_IP
         }
 
         /// <summary>
-        /// Functia returneaza filmul curent care este selectat
+        /// Metoda returneaza filmul curent care este selectat
         /// </summary>
         /// <returns>Un obiect de tipul SearchMovie</returns>
         public static SearchMovie GetSelectedMovie()
@@ -89,22 +90,23 @@ namespace Proiect_IP
             }
             return null;
         }
+
         /// <summary>
-        /// Functia salveaza Ratingul filmului curent intr-un fisier json
+        /// Metoda salveaza Ratingul filmului curent intr-un fisier json
         /// </summary>
         /// <param name="rating"></param>
         public static void SaveRating(int rating)
         {
             RatingObj obj = new RatingObj(SelectedMovie, rating);
 
-            
-            if (File.Exists(ResDirectory + ratingFiles)) 
+            if (File.Exists(ResDirectory + ratingFiles))
             {
                 string text = File.ReadAllText(ResDirectory + ratingFiles);
                 List<RatingObj> list = JsonConvert.DeserializeObject<List<RatingObj>>(text);
-                if (list == null) {
+                if (list == null)
+                {
                     list = new List<RatingObj>();
-                } 
+                }
                 bool exists = false;
                 int index = -1;
                 for (int i = 0; i < list.Count; i++)
@@ -119,23 +121,21 @@ namespace Proiect_IP
                 if (!exists)
                 {
                     list.Add(obj);
-                } else
+                }
+                else
                 {
                     list[index].Rating = rating;
                 }
 
                 string jsonResult = JsonConvert.SerializeObject(list);
                 File.WriteAllText(ResDirectory + ratingFiles, jsonResult);
-
-            } else
+            }
+            else
             {
                 string jsonResult = JsonConvert.SerializeObject(obj);
                 File.Create(ResDirectory + ratingFiles);
                 File.WriteAllText(ResDirectory + ratingFiles, jsonResult);
             }
-           
-            
-
         }
 
         public class RatingObj
@@ -149,15 +149,15 @@ namespace Proiect_IP
                 this.Rating = rating;
             }
         }
+
         /// <summary>
-        /// Functia returneaza ratingul filmului curent 
+        /// Metoda returneaza ratingul filmului curent
         /// </summary>
         /// <returns>Ratingul sau un string gol</returns>
         public static string GetRating()
         {
             try
             {
-
                 string text = File.ReadAllText(ResDirectory + ratingFiles);
                 List<RatingObj> list = JsonConvert.DeserializeObject<List<RatingObj>>(text);
 
@@ -171,14 +171,13 @@ namespace Proiect_IP
                         }
                     }
                 }
-            } catch (Exception e)
+            }
+            catch (Exception e)
             {
                 return "";
             }
 
             return "";
         }
-
-        
     }
 }

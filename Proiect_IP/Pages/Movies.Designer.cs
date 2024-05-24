@@ -30,6 +30,7 @@
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.buttonAcasa = new System.Windows.Forms.Button();
+            this.buttonHelp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -49,11 +50,22 @@
             this.buttonAcasa.Text = "Acasa";
             this.buttonAcasa.UseVisualStyleBackColor = true;
             // 
+            // buttonHelp
+            // 
+            this.buttonHelp.Location = new System.Drawing.Point(1343, 12);
+            this.buttonHelp.Name = "buttonHelp";
+            this.buttonHelp.Size = new System.Drawing.Size(123, 42);
+            this.buttonHelp.TabIndex = 18;
+            this.buttonHelp.Text = "Ajutor";
+            this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
+            // 
             // Movies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1478, 944);
+            this.Controls.Add(this.buttonHelp);
             this.Controls.Add(this.buttonAcasa);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Movies";
@@ -67,5 +79,6 @@
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button buttonAcasa;
+        private System.Windows.Forms.Button buttonHelp;
     }
 }

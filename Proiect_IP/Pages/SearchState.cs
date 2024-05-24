@@ -13,23 +13,43 @@ namespace Pages
     public class SearchState : IState
     {
         private SearchPage _searchPage;
-         
+
+        /// <summary>
+        /// Constructor pentru clasa SearchState.
+        /// Inițializează o nouă instanță a paginii de căutare.
+        /// </summary>
         public SearchState()
         {
             _searchPage = new SearchPage();
         }
 
+        /// <summary>
+        /// Afișează pagina de căutare.
+        /// </summary>
         public void Show() => _searchPage.Show();
 
+        /// <summary>
+        /// Returnează o fereastra SearchPage
+        /// </summary>
         public Form GetForm() => _searchPage;
 
+        /// <summary>
+        /// Metoda seteaza o functie de Callback pentru a apela o functie care schimba starea
+        /// </summary>
+        /// <param name="action"></param>
         public void SetCallBack(Action<object, States> func)
         {
             _searchPage.SetCallBack(func);
         }
-
+        /// <summary>
+        /// Seteaza locatia ferestrei
+        /// </summary>
+        /// <param name="p"></param>
         public void SetLocation(Point p) => _searchPage.SetLocation(p);
-
+        /// <summary>
+        /// Returneaza locatia ferestrei
+        /// </summary>
+        /// <returns></returns>
         public Point GetLocation() => _searchPage.GetLocation();
     }
 }

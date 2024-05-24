@@ -15,20 +15,26 @@ namespace Pages
     public partial class MovieInfo : Form
     {
         private Action<object, States> _callBackFunc;
-
         public MovieInfo()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.Manual;
         }
-
+        /// <summary>
+        /// Metoda seteaza o functie de Callback pentru a apela o functie care schimba starea
+        /// </summary>
+        /// <param name="action"></param>
         public void SetCallBack(Action<object, States> action)
         {
             _callBackFunc = action;
             button1.Click += delegate { action(this, States.Search_PageState); };
-
         }
 
+        /// <summary>
+        /// Afiseaza informatiile despre filmul selectat
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MovieInfo_Load(object sender, EventArgs e)
         {
             SearchMovie movie = Res.GetSelectedMovie();
@@ -51,13 +57,20 @@ namespace Pages
             }
         }
 
-  
-
+        /// <summary>
+        /// Metoda este apelata cand utilizatorul interactioneza 
+        /// cu valoare ratingului
+        /// </summary>
         private void changeRating()
         {
             ratingLabel.Text = (ratingBar.Value + 1).ToString();
         }
-
+        /// <summary>
+        /// Metoda este apelata cand utilizatorul a apasat butonul de 
+        /// confirmare al ratingului, respectiv afiseaza pe fereastra
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
             setedRating.Visible = true;
@@ -65,10 +78,24 @@ namespace Pages
 
             Res.SaveRating((ratingBar.Value + 1));
         }
+        /// <summary>
+        /// Seteaza locatia ferestrei
+        /// </summary>
+        /// <param name="p">Un Point  care contine x,y</param>
         public void SetLocation(Point p) => this.Location = p;
-        
+        /// <summary>
+        ///  Returnaza Locatia ferestrei
+        /// </summary>
+        /// <returns>Valorile x,y sub forma unui Point</returns>
         public Point GetLocation() => this.Location;
-        
+        /// <summary>
+        /// Afiseaza help-ul
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonHelp_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

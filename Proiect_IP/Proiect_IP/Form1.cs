@@ -22,9 +22,14 @@ namespace Proiect_IP
             InitializeComponent();
 
         }
-
+        /// <summary>
+        /// De aici este initializata aplicatia 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
+            IState state = new MovieInfoState();
             try
             {
                 page = new Page();
@@ -41,13 +46,20 @@ namespace Proiect_IP
                 MessageBox.Show("Starea este invalida");
             }
         }
-
+        /// <summary>
+        /// Se afiseaza prima stare
+        /// </summary>
         public void FirstState()
         {
             Hide();
             page.Show();
         }
 
+        /// <summary>
+        /// Metoda principala care face posibl schimbarea starilor
+        /// </summary>
+        /// <param name="sender">Ferestra curenta</param>
+        /// <param name="state">Noua stare</param>
         public void changeState(object sender, States state)
         {
             try
