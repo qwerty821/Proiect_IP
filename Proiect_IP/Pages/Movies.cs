@@ -59,6 +59,10 @@ namespace Pages
         /// </summary>
         private void displayMovies()
         {
+            if (list == null)
+            {
+                return;
+            }
             foreach(SearchMovie movie in list)
             {
                 FlowLayoutPanel moviePanel = new FlowLayoutPanel();
@@ -140,6 +144,11 @@ namespace Pages
         private void buttonHelp_Click(object sender, EventArgs e)
         {
             Help.ShowHelp(this, Res.GetHelpPath());
+        }
+
+        private void Movies_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

@@ -254,12 +254,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1478, 944);
             this.Controls.Add(this.buttonHelp);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MovieInfo";
             this.Text = "MovieInfo";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MovieInfo_FormClosing);
             this.Load += new System.EventHandler(this.MovieInfo_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

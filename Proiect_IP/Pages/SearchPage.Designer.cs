@@ -37,7 +37,7 @@
             // searchButton
             // 
             this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchButton.Location = new System.Drawing.Point(958, 78);
+            this.searchButton.Location = new System.Drawing.Point(958, 85);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(108, 60);
             this.searchButton.TabIndex = 4;
@@ -77,6 +77,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1478, 944);
             this.Controls.Add(this.buttonHelp);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -84,6 +85,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "SearchPage";
             this.Text = "SearchPage";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SearchPage_FormClosing);
             this.Load += new System.EventHandler(this.SearchPage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -93,7 +93,6 @@ namespace Proiect_IP
 
                 Point p = page.GetLocation();
 
-                Console.WriteLine(p);
 
                 page.SetState(newState);
                 

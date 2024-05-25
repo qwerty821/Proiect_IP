@@ -60,6 +60,10 @@ namespace Proiect_IP
         /// <param name="movies"></param>
         public static void WriteMovies(object movies)
         {
+            if (movies == null)
+            {
+                throw new ArgumentNullException(nameof(movies));
+            }
             string JsonResult = JsonConvert.SerializeObject(movies);
             File.WriteAllText(ResDirectory + moviesFile, JsonResult);
         }
@@ -77,10 +81,15 @@ namespace Proiect_IP
             }
             catch (Exception ex)
             {
-                throw new FileNotFoundException("Nu exista fisierul sau directorul" + $"{ResDirectory} + {moviesFile}");
+                //throw new FileNotFoundException("Nu exista fisierul sau directorul" + $"{ResDirectory} + {moviesFile}");
+                throw ex;
             }
 
             List<SearchMovie> list = JsonConvert.DeserializeObject<List<SearchMovie>>(text);
+            if (list.Count == 0)
+            {
+                return null;
+            }
             return list;
         }
 
@@ -90,6 +99,10 @@ namespace Proiect_IP
         /// <param name="id"></param>
         public static void SetSelectedMovie(int id)
         {
+            if (id < 0)
+            {
+                throw new Exception("id - ul trebuie sa fie > 0");
+            }
             SelectedMovie = id;
         }
 
@@ -193,7 +206,14 @@ namespace Proiect_IP
             }
             catch (Exception e)
             {
-                return "";
+                if (e is FileNotFoundException)
+                {
+                    throw new FileNotFoundException("Fisierul nu a fost gasit");
+                }
+                else
+                {
+                    return "";
+                }
             }
 
             return "";
@@ -217,6 +237,22 @@ namespace Proiect_IP
             {
                 return false;
             }
+        }
+
+        public static List<SearchMovie> GetMoviesTest()
+        {
+            string text;
+            try
+            {
+                text = File.ReadAllText(ResDirectory + moviesFile);
+            }
+            catch (Exception ex)
+            {
+                throw new FileNotFoundException("Nu exista fisierul sau directorul" + $"{ResDirectory} + {moviesFile}");
+            }
+
+            List<SearchMovie> list = JsonConvert.DeserializeObject<List<SearchMovie>>(text);
+            return list;
         }
     }
 }

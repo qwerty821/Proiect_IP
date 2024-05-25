@@ -40,14 +40,14 @@ namespace Pages
         /// </summary>
         public SearchPage()
         {
-            try
+           InitializeComponent();
+            if (Res.CheckInternetConnection() == false)
             {
-                InitializeComponent();
-            } catch(Exception ex) {
-                Console.WriteLine("aaaaaaaaaa");
-                throw new Exception(ex.Message);
+                throw new Exception("Aplicatia nu este conectata la internet");
             }
             this.StartPosition = FormStartPosition.Manual;
+            this.KeyPreview = true;
+            this.KeyDown += new KeyEventHandler(enterKey);
         }
 
         /// <summary>
@@ -60,7 +60,7 @@ namespace Pages
             {
                 throw new ArgumentNullException("action");
             }
-            searchButton.Click += delegate { action(this, States.Movies_ListState); };
+           // searchButton.Click += delegate { action(this, States.Movies_ListState); };
             _callBackFunc = action;
         }
 
@@ -72,6 +72,11 @@ namespace Pages
         /// <param name="e"></param>
         private void searchButton_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("Nu ati introdus nimic");
+                return;
+            }
             
             TMDbClient client = new TMDbClient("ba989c6148c4f9e4f7456f4d3ba6a8b7");
 
@@ -80,6 +85,7 @@ namespace Pages
             var movie = client.SearchMovieAsync(title).Result;
             var movies = movie.Results;
             SaveToJson(movies);
+            _callBackFunc(this, States.Movies_ListState);
         }
         /// <summary>
         /// Salveaza lista de filme intr-un fiser
@@ -100,10 +106,7 @@ namespace Pages
             
             TMDbClient client = new TMDbClient("ba989c6148c4f9e4f7456f4d3ba6a8b7");
             
-            if (Res.CheckInternetConnection() == false)
-            {
-                throw new Exception("Aplicatia nu este conectata la internet");
-            }
+           
 
             var mov = client.GetMoviePopularListAsync().Result;
 
@@ -178,6 +181,19 @@ namespace Pages
         private void buttonHelp_Click(object sender, EventArgs e)
         {
             Help.ShowHelp(this, Res.GetHelpPath());
+        }
+
+        private void SearchPage_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+    
+        private void enterKey(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                searchButton_Click(this, EventArgs.Empty);
+            }
         }
     }
 }

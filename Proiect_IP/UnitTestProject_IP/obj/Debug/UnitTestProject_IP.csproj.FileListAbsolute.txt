@@ -26,3 +26,4 @@ D:\Facultate\an3\IP\ProiectIP\Proiect_IP\UnitTestProject_IP\obj\Debug\UnitTestPr
 D:\Facultate\an3\IP\ProiectIP\Proiect_IP\UnitTestProject_IP\obj\Debug\UnitTestProject_IP.csproj.CopyComplete
 D:\Facultate\an3\IP\ProiectIP\Proiect_IP\UnitTestProject_IP\obj\Debug\UnitTestProject_IP.dll
 D:\Facultate\an3\IP\ProiectIP\Proiect_IP\UnitTestProject_IP\obj\Debug\UnitTestProject_IP.pdb
+D:\Facultate\an3\IP\ProiectIP\Proiect_IP\UnitTestProject_IP\bin\Debug\UnitTestProject_IP.dll.config

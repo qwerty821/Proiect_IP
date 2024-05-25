@@ -64,12 +64,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1478, 944);
             this.Controls.Add(this.buttonHelp);
             this.Controls.Add(this.buttonAcasa);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Movies";
             this.Text = "Movies";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Movies_FormClosing);
             this.Load += new System.EventHandler(this.Movies_Load);
             this.ResumeLayout(false);
 

@@ -112,5 +112,10 @@ namespace Pages
         {
             Help.ShowHelp(this, Res.GetHelpPath());
         }
+
+        private void MovieInfo_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }
