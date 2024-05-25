@@ -35,6 +35,5 @@ namespace Pages
         /// </summary>
         /// <param name="p"></param>
         Point GetLocation();
-
     }
 }

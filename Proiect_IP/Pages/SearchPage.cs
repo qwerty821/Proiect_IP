@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -25,7 +26,13 @@ namespace Pages
         /// </summary>
         public SearchPage()
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
+            } catch(Exception ex) {
+                Console.WriteLine("aaaaaaaaaa");
+                throw new Exception(ex.Message);
+            }
             this.StartPosition = FormStartPosition.Manual;
         }
 
@@ -76,8 +83,16 @@ namespace Pages
         /// <param name="e"></param>
         private void SearchPage_Load(object sender, EventArgs e)
         {
+            
             TMDbClient client = new TMDbClient("ba989c6148c4f9e4f7456f4d3ba6a8b7");
+            
+            if (Res.CheckInternetConnection() == false)
+            {
+                throw new Exception("Aplicatia nu este conectata la internet");
+            }
+
             var mov = client.GetMoviePopularListAsync().Result;
+
             var list = mov.Results;
             SaveToJson(list);
 
@@ -148,7 +163,7 @@ namespace Pages
         /// <param name="e"></param>
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-
+            Help.ShowHelp(this, Res.GetHelpPath());
         }
     }
 }

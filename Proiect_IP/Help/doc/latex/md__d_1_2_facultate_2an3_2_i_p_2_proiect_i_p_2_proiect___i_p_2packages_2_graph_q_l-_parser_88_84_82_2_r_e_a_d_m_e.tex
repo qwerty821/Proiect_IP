@@ -1,0 +1,149 @@
+\chapter{Graph\+QL.\+NET Parser}
+\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l-_parser_88_84_82_2_r_e_a_d_m_e}{}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l-_parser_88_84_82_2_r_e_a_d_m_e}\index{GraphQL.NET Parser@{GraphQL.NET Parser}}
+\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l-_parser_88_84_82_2_r_e_a_d_m_e_autotoc_md0}%
+\Hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l-_parser_88_84_82_2_r_e_a_d_m_e_autotoc_md0}%
+  \href{https://codecov.io/gh/graphql-dotnet/parser}{\texttt{ }} \href{https://www.nuget.org/packages/GraphQL-Parser}{\texttt{ }} \href{https://www.nuget.org/packages/GraphQL-Parser}{\texttt{ }} \href{https://github.com/graphql-dotnet/parser/releases}{\texttt{ }} \href{https://github.com/graphql-dotnet/parser/commits/master}{\texttt{ }} \href{https://github.com/graphql-dotnet/parser/graphs/contributors}{\texttt{ }} 
+
+This library contains a lexer and parser as well as the complete \href{http://spec.graphql.org/October2021/\#sec-Appendix-Grammar-Summary}{\texttt{ Graph\+QL AST model}} that allows you to work with Graph\+QL documents compatible with the \href{https://spec.graphql.org/October2021/}{\texttt{ October 2021 spec}}.
+
+The parser from this library is used by the \href{https://github.com/graphql-dotnet/graphql-dotnet}{\texttt{ Graph\+QL.\+NET}} project and was \href{https://codecov.io/gh/graphql-dotnet/parser}{\texttt{ verified}} by many test data sets.
+
+Preview versions of this package are available on \href{https://github.com/orgs/graphql-dotnet/packages?repo_name=parser}{\texttt{ Git\+Hub Packages}}.\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l-_parser_88_84_82_2_r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{1. Lexer}{1. Lexer}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l-_parser_88_84_82_2_r_e_a_d_m_e_autotoc_md1}
+Generates token based on input text. Lexer takes advantage of {\ttfamily Read\+Only\+Memory\texorpdfstring{$<$}{<}char\texorpdfstring{$>$}{>}} and in most cases does not allocate memory on the managed heap at all.\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l-_parser_88_84_82_2_r_e_a_d_m_e_autotoc_md2}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l-_parser_88_84_82_2_r_e_a_d_m_e_autotoc_md2}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ token\ =\ Lexer.Lex(\textcolor{stringliteral}{"{}\(\backslash\)"{}str\(\backslash\)"{}"{}});}
+
+\end{DoxyCode}
+
+
+Lex method always returns the first token it finds. In this case case the result would look like following. \hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l-_parser_88_84_82_2_r_e_a_d_m_e_autotoc_md3}{}\doxysection{\texorpdfstring{2. Parser}{2. Parser}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l-_parser_88_84_82_2_r_e_a_d_m_e_autotoc_md3}
+Parses provided Graph\+QL expression into AST (abstract syntax tree). Parser also takes advantage of {\ttfamily Read\+Only\+Memory\texorpdfstring{$<$}{<}char\texorpdfstring{$>$}{>}} but still allocates memory for AST.\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l-_parser_88_84_82_2_r_e_a_d_m_e_autotoc_md4}{}\doxysubsection{\texorpdfstring{Usage}{Usage}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l-_parser_88_84_82_2_r_e_a_d_m_e_autotoc_md4}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ ast1\ =\ Parser.Parse(\textcolor{stringliteral}{@"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ field}}
+\DoxyCodeLine{\textcolor{stringliteral}{\}"{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{var\ ast2\ =\ Parser.Parse(\textcolor{stringliteral}{@"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ field}}
+\DoxyCodeLine{\textcolor{stringliteral}{\}"{}},\ \textcolor{keyword}{new}\ ParserOptions\ \{\ Ignore\ =\ IgnoreOptions.Comments\ \});}
+
+\end{DoxyCode}
+
+
+By default {\ttfamily Parser\+Options.\+Ignore} is {\ttfamily Ignore\+Options.\+None}. If you want to ignore all comments use {\ttfamily Ignore\+Options.\+Comments}. If you don\textquotesingle{}t need information about tokens locations in the source document, then use flag {\ttfamily Ignore\+Options.\+Locations}. Or just use {\ttfamily Ignore\+Options.\+All} and this will maximize the saving of memory allocated in the managed heap for AST.\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l-_parser_88_84_82_2_r_e_a_d_m_e_autotoc_md5}{}\doxysection{\texorpdfstring{3. ASTVisitor}{3. ASTVisitor}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l-_parser_88_84_82_2_r_e_a_d_m_e_autotoc_md5}
+{\ttfamily ASTVisitor} provides API to traverse AST of the parsed Graph\+QL document. Default implementation traverses all AST nodes of the provided one. You can inherit from it and override desired methods to implement your own AST processing algorithm.\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l-_parser_88_84_82_2_r_e_a_d_m_e_autotoc_md6}{}\doxysubsection{\texorpdfstring{SDLPrinter}{SDLPrinter}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l-_parser_88_84_82_2_r_e_a_d_m_e_autotoc_md6}
+For printing SDL from AST, you can use {\ttfamily SDLPrinter}. This is a highly optimized visitor for asynchronous non-\/blocking SDL output into provided {\ttfamily Text\+Writer}. In the majority of cases it does not allocate memory in the managed heap at all. Extension methods are also provided for printing directly to a string, which utilize the {\ttfamily String\+Builder} and {\ttfamily String\+Writer} classes.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ document\ =\ Parser.Parse(\textcolor{stringliteral}{"{}query\ \{\ hero\ \{\ name\ age\ \}\ \}"{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ print\ to\ a\ string\ with\ default\ options}}
+\DoxyCodeLine{var\ sdl\ =\ \textcolor{keyword}{new}\ SDLPrinter().Print(document);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ print\ to\ a\ string\ builder}}
+\DoxyCodeLine{var\ sb\ =\ \textcolor{keyword}{new}\ StringBuilder();}
+\DoxyCodeLine{\textcolor{keyword}{new}\ SDLPrinter().Print(document,\ sb);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ print\ to\ a\ string\ with\ some\ options}}
+\DoxyCodeLine{var\ sdlPrinter\ =\ \textcolor{keyword}{new}\ SDLPrinter(}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{new}\ SDLPrinterOptions\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ PrintComments\ =\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ EachDirectiveLocationOnNewLine\ =\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ EachUnionMemberOnNewLine\ =\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ \});}
+\DoxyCodeLine{var\ sdl\ =\ sdlPrinter.Print(document);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ print\ to\ a\ stream\ asynchronously}}
+\DoxyCodeLine{\textcolor{keyword}{using\ }var\ writer\ =\ \textcolor{keyword}{new}\ StreamWriter(stream);}
+\DoxyCodeLine{await\ sdlPrinter.PrintAsync(document,\ writer,\ \textcolor{keywordflow}{default});}
+\DoxyCodeLine{await\ writer.FlushAsync();}
+
+\end{DoxyCode}
+
+
+Output\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{query\ \{}
+\DoxyCodeLine{\ \ hero\ \{}
+\DoxyCodeLine{\ \ \ \ name}
+\DoxyCodeLine{\ \ \ \ age}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l-_parser_88_84_82_2_r_e_a_d_m_e_autotoc_md7}{}\doxysubsection{\texorpdfstring{SDLSorter}{SDLSorter}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l-_parser_88_84_82_2_r_e_a_d_m_e_autotoc_md7}
+An AST document can be sorted with the {\ttfamily SDLSorter} using a predefined sort order. You can specify the string comparison; by default it uses a culture-\/invariant case-\/insensitive comparison. Any futher customization is possible by deriving from {\ttfamily SDLSorter\+Options} and overriding the {\ttfamily Compare} methods.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ document\ =\ Parser.Parse(\textcolor{stringliteral}{"{}query\ \{\ hero\ \{\ name\ age\ \}\ \}"{}});}
+\DoxyCodeLine{SDLSorter.Sort(document);}
+\DoxyCodeLine{var\ sdl\ =\ \textcolor{keyword}{new}\ SDLPrinter().Print(document);}
+
+\end{DoxyCode}
+
+
+Output\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{query\ \{}
+\DoxyCodeLine{\ \ hero\ \{}
+\DoxyCodeLine{\ \ \ \ age}
+\DoxyCodeLine{\ \ \ \ name}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l-_parser_88_84_82_2_r_e_a_d_m_e_autotoc_md8}{}\doxysubsection{\texorpdfstring{Structure\+Printer}{Structure\+Printer}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l-_parser_88_84_82_2_r_e_a_d_m_e_autotoc_md8}
+You can also find a {\ttfamily Structure\+Printer} visitor that prints AST into the provided {\ttfamily Text\+Writer} as a hierarchy of node types. It can be useful when debugging for better understanding the AST structure. Consider the following Graph\+QL document\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{query\ a\ \{\ name\ age\ \}}
+
+\end{DoxyCode}
+
+
+After {\ttfamily Structure\+Printer} processing the output text will be
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Document}
+\DoxyCodeLine{\ \ OperationDefinition}
+\DoxyCodeLine{\ \ \ \ Name\ [a]}
+\DoxyCodeLine{\ \ \ \ SelectionSet}
+\DoxyCodeLine{\ \ \ \ \ \ Field}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Name\ [name]}
+\DoxyCodeLine{\ \ \ \ \ \ Field}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Name\ [age]}
+
+\end{DoxyCode}
+
+
+Usage\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{static}\ async\ Task\ PrintStructure(\textcolor{keywordtype}{string}\ sdl)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ var\ document\ =\ Parser.Parse(sdl);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{using\ }var\ writer\ =\ \textcolor{keyword}{new}\ StringWriter();\ }
+\DoxyCodeLine{\ \ \ \ var\ printer\ =\ \textcolor{keyword}{new}\ StructurePrinter()}
+\DoxyCodeLine{\ \ \ \ await\ printer.PrintAsync(document,\ writer);}
+\DoxyCodeLine{\ \ \ \ var\ rendered\ =\ writer.ToString();}
+\DoxyCodeLine{\ \ \ \ Console.WriteLine(rendered);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l-_parser_88_84_82_2_r_e_a_d_m_e_autotoc_md9}{}\doxysection{\texorpdfstring{Contributors}{Contributors}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l-_parser_88_84_82_2_r_e_a_d_m_e_autotoc_md9}
+This project exists thanks to all the people who contribute. \href{https://github.com/graphql-dotnet/parser/graphs/contributors}{\texttt{ }}
+
+PRs are welcome! Looking for something to work on? The list of \href{https://github.com/graphql-dotnet/parser/issues}{\texttt{ open issues}} is a great place to start. You can help the project by simply responding to some of the \href{https://github.com/graphql-dotnet/parser/issues?q=is\%3Aissue+is\%3Aopen+label\%3Aquestion}{\texttt{ asked questions}}. 

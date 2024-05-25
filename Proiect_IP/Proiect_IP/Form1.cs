@@ -51,8 +51,10 @@ namespace Proiect_IP
         /// </summary>
         public void FirstState()
         {
+
             Hide();
             page.Show();
+
         }
 
         /// <summary>

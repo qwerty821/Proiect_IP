@@ -123,8 +123,6 @@ D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Proiect_IP\obj\Debug\Proiect_IP.pdb
 D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Proiect_IP\bin\Debug\Proiect_IP.exe.config
 D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Proiect_IP\bin\Debug\Proiect_IP.exe
 D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Proiect_IP\bin\Debug\Proiect_IP.pdb
-D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Proiect_IP\bin\Debug\GraphQL.dll
-D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Proiect_IP\bin\Debug\GraphQLParser.dll
 D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Proiect_IP\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Proiect_IP\bin\Debug\Newtonsoft.Json.dll
 D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Proiect_IP\bin\Debug\Pages.dll
@@ -138,8 +136,6 @@ D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Proiect_IP\bin\Debug\TMDbLib.dll
 D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Proiect_IP\bin\Debug\Resources.dll
 D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Proiect_IP\bin\Debug\Pages.pdb
 D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Proiect_IP\bin\Debug\Pages.dll.config
-D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Proiect_IP\bin\Debug\GraphQL.xml
-D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Proiect_IP\bin\Debug\GraphQLParser.xml
 D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Proiect_IP\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Proiect_IP\bin\Debug\Newtonsoft.Json.xml
 D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Proiect_IP\bin\Debug\System.Buffers.xml

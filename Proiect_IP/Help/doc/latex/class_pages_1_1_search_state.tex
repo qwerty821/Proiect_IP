@@ -1,0 +1,115 @@
+\doxysection{Pages.\+Search\+State Class Reference}
+\hypertarget{class_pages_1_1_search_state}{}\label{class_pages_1_1_search_state}\index{Pages.SearchState@{Pages.SearchState}}
+Inheritance diagram for Pages.\+Search\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pages_1_1_search_state}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_pages_1_1_search_state_aedf7d608d9bc4c02788e18ca2f2072d8}\label{class_pages_1_1_search_state_aedf7d608d9bc4c02788e18ca2f2072d8} 
+{\bfseries Search\+State} ()
+\begin{DoxyCompactList}\small\item\em Constructor pentru clasa Search\+State. Inițializează o nouă instanță a paginii de căutare. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pages_1_1_search_state_aa6160f793dd098717fc53371513c8992}{Show}} ()
+\begin{DoxyCompactList}\small\item\em Afișează pagina de căutare. \end{DoxyCompactList}\item 
+Form \mbox{\hyperlink{class_pages_1_1_search_state_ae86b1e39d9bb7ea9503285071aa2dfbb}{Get\+Form}} ()
+\begin{DoxyCompactList}\small\item\em Returnează o fereastra Search\+Page. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pages_1_1_search_state_a7f44436d711b40a5bea86b54c7d60829}{Set\+Call\+Back}} (Action$<$ object, \mbox{\hyperlink{namespace_pages_a3e807bf972025324f9cba410d19f89ed}{States}} $>$ func)
+\begin{DoxyCompactList}\small\item\em Metoda seteaza o functie de Callback pentru a apela o functie care schimba starea. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pages_1_1_search_state_aa74ad12cb7c514165328eeb3bb1270d4}{Set\+Location}} (Point p)
+\begin{DoxyCompactList}\small\item\em Seteaza locatia ferestrei. \end{DoxyCompactList}\item 
+Point \mbox{\hyperlink{class_pages_1_1_search_state_ad390ba635ef370f62a6c2107b97cc59d}{Get\+Location}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza locatia ferestrei. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pages_1_1_search_state_ae86b1e39d9bb7ea9503285071aa2dfbb}\label{class_pages_1_1_search_state_ae86b1e39d9bb7ea9503285071aa2dfbb} 
+\index{Pages.SearchState@{Pages.SearchState}!GetForm@{GetForm}}
+\index{GetForm@{GetForm}!Pages.SearchState@{Pages.SearchState}}
+\doxysubsubsection{\texorpdfstring{GetForm()}{GetForm()}}
+{\footnotesize\ttfamily Form Pages.\+Search\+State.\+Get\+Form (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returnează o fereastra Search\+Page. 
+
+
+
+Implements \mbox{\hyperlink{interface_pages_1_1_i_state_a12be92cf637ff8a83462b6225d3c2932}{Pages.\+IState}}.
+
+\Hypertarget{class_pages_1_1_search_state_ad390ba635ef370f62a6c2107b97cc59d}\label{class_pages_1_1_search_state_ad390ba635ef370f62a6c2107b97cc59d} 
+\index{Pages.SearchState@{Pages.SearchState}!GetLocation@{GetLocation}}
+\index{GetLocation@{GetLocation}!Pages.SearchState@{Pages.SearchState}}
+\doxysubsubsection{\texorpdfstring{GetLocation()}{GetLocation()}}
+{\footnotesize\ttfamily Point Pages.\+Search\+State.\+Get\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returneaza locatia ferestrei. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_pages_1_1_i_state_ac964961e78a042f72f42bf2d3835fcda}{Pages.\+IState}}.
+
+\Hypertarget{class_pages_1_1_search_state_a7f44436d711b40a5bea86b54c7d60829}\label{class_pages_1_1_search_state_a7f44436d711b40a5bea86b54c7d60829} 
+\index{Pages.SearchState@{Pages.SearchState}!SetCallBack@{SetCallBack}}
+\index{SetCallBack@{SetCallBack}!Pages.SearchState@{Pages.SearchState}}
+\doxysubsubsection{\texorpdfstring{SetCallBack()}{SetCallBack()}}
+{\footnotesize\ttfamily void Pages.\+Search\+State.\+Set\+Call\+Back (\begin{DoxyParamCaption}\item[{Action$<$ object, \mbox{\hyperlink{namespace_pages_a3e807bf972025324f9cba410d19f89ed}{States}} $>$}]{func }\end{DoxyParamCaption})}
+
+
+
+Metoda seteaza o functie de Callback pentru a apela o functie care schimba starea. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_pages_1_1_i_state_a7e952326b322ec6f8d8012894b69c908}{Pages.\+IState}}.
+
+\Hypertarget{class_pages_1_1_search_state_aa74ad12cb7c514165328eeb3bb1270d4}\label{class_pages_1_1_search_state_aa74ad12cb7c514165328eeb3bb1270d4} 
+\index{Pages.SearchState@{Pages.SearchState}!SetLocation@{SetLocation}}
+\index{SetLocation@{SetLocation}!Pages.SearchState@{Pages.SearchState}}
+\doxysubsubsection{\texorpdfstring{SetLocation()}{SetLocation()}}
+{\footnotesize\ttfamily void Pages.\+Search\+State.\+Set\+Location (\begin{DoxyParamCaption}\item[{Point}]{p }\end{DoxyParamCaption})}
+
+
+
+Seteaza locatia ferestrei. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_pages_1_1_i_state_a93925ec5a0fab51f6b6f833c305c5af0}{Pages.\+IState}}.
+
+\Hypertarget{class_pages_1_1_search_state_aa6160f793dd098717fc53371513c8992}\label{class_pages_1_1_search_state_aa6160f793dd098717fc53371513c8992} 
+\index{Pages.SearchState@{Pages.SearchState}!Show@{Show}}
+\index{Show@{Show}!Pages.SearchState@{Pages.SearchState}}
+\doxysubsubsection{\texorpdfstring{Show()}{Show()}}
+{\footnotesize\ttfamily void Pages.\+Search\+State.\+Show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Afișează pagina de căutare. 
+
+
+
+Implements \mbox{\hyperlink{interface_pages_1_1_i_state_a1351c3bdc7515516a791fd9f41384e48}{Pages.\+IState}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Facultate/an3/\+IP/\+Proiect\+IP/\+Proiect\+\_\+\+IP/\+Pages/Search\+State.\+cs\end{DoxyCompactItemize}

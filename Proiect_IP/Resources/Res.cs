@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using TMDbLib.Objects.Movies;
@@ -21,6 +22,8 @@ namespace Proiect_IP
         public static string imageUrl { get; } = "https://image.tmdb.org/t/p/w500/";
         public static string moviesFile { get; } = "movies.json";
         public static string ratingFiles { get; } = "ratings.json";
+
+        public static string helpFile { get; } = "HelpProgramatori.chm"; 
 
         private static int SelectedMovie;
 
@@ -178,6 +181,26 @@ namespace Proiect_IP
             }
 
             return "";
+        }
+
+        public static string GetHelpPath()
+        {
+            return ResDirectory + helpFile;
+        }
+        public static bool CheckInternetConnection()
+        {
+            try
+            {
+                using (var client = new WebClient())
+                using (var stream = client.OpenRead("http://www.google.com"))
+                {
+                    return true;
+                }
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

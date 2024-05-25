@@ -36,12 +36,6 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GraphQL, Version=7.8.0.0, Culture=neutral, PublicKeyToken=e6238258560628ee, processorArchitecture=MSIL">
-      <HintPath>..\packages\GraphQL.7.8.0\lib\netstandard2.0\GraphQL.dll</HintPath>
-    </Reference>
-    <Reference Include="GraphQLParser, Version=8.4.2.0, Culture=neutral, PublicKeyToken=e6238258560628ee, processorArchitecture=MSIL">
-      <HintPath>..\packages\GraphQL-Parser.8.4.2\lib\netstandard2.0\GraphQLParser.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.1\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -152,10 +146,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Analyzer Include="..\packages\GraphQL.Analyzers.7.8.0\analyzers\dotnet\cs\GraphQL.Analyzers.CodeFixes.dll" />
-    <Analyzer Include="..\packages\GraphQL.Analyzers.7.8.0\analyzers\dotnet\cs\GraphQL.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Pages\Pages.csproj">

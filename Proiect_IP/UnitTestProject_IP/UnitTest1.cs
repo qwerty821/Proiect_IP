@@ -72,6 +72,16 @@ namespace UnitTestProject_IP
              Res.GetSelectedMovie();
         }
 
+        [Ignore]
+        [TestMethod]
+        [ExpectedException(typeof(Exception))]
+        public void Test_Internet_Conection()
+        {
+            SearchPage page = new SearchPage();
+            
+
+        }
+
 
 
 

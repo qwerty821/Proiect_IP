@@ -1,0 +1,315 @@
+\chapter{Graph\+QL for .NET}
+\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e}{}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e}\index{GraphQL for .NET@{GraphQL for .NET}}
+\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md37}%
+\Hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md37}%
+ \doxysectlink{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_l_i_c_e_n_s_e}{}{0} \href{https://codecov.io/gh/graphql-dotnet/graphql-dotnet}{\texttt{ }} \href{https://www.nuget.org/packages/GraphQL}{\texttt{ }} \href{https://www.nuget.org/packages/GraphQL}{\texttt{ }} \href{https://github.com/graphql-dotnet/graphql-dotnet/releases}{\texttt{ }} \href{https://github.com/graphql-dotnet/graphql-dotnet/commits/master}{\texttt{ }} 
+
+\href{https://github.com/graphql-dotnet/graphql-dotnet/graphs/contributors}{\texttt{ }}   
+
+\texorpdfstring{$\vert$}{|} \+:heart\+: \href{https://opencollective.com/graphql-net\#backer}{\texttt{ Become a backer!}} \+:heart\+: \texorpdfstring{$\vert$}{|} !\mbox{[}Backers on Open Collective\mbox{]}(https\+://opencollective.com/graphql-\/net/backers/badge.svg) !\mbox{[}Sponsors on Open Collective\mbox{]}(https\+://opencollective.com/graphql-\/net/sponsors/badge.svg) \texorpdfstring{$\vert$}{|} \texorpdfstring{$\vert$}{|}-\/\texorpdfstring{$\vert$}{|}-\/\texorpdfstring{$\vert$}{|}
+
+\texorpdfstring{$\vert$}{|} \+:heavy\+\_\+dollar\+\_\+sign\+: \href{https://github.com/graphql-dotnet/graphql-dotnet/blob/master/BOUNTY.md}{\texttt{ Get paid for contributing!}} \+:heavy\+\_\+dollar\+\_\+sign\+: \texorpdfstring{$\vert$}{|} \href{https://github.com/graphql-dotnet/graphql-dotnet/issues?q=is\%3Aopen+is\%3Aissue+label\%3Abounty}{\texttt{ }} \href{https://github.com/graphql-dotnet/graphql-dotnet/issues?q=is\%3Aclosed+is\%3Aissue+label\%3Abounty-paid}{\texttt{ }} \texorpdfstring{$\vert$}{|}-\/\texorpdfstring{$\vert$}{|}-\/\texorpdfstring{$\vert$}{|}
+
+This is an implementation of \href{https://github.com/facebook/graphql}{\texttt{ Facebook\textquotesingle{}s Graph\+QL}} in .NET.
+
+Now the \href{https://github.com/graphql/graphql-spec}{\texttt{ specification}} is being developed by the \href{https://foundation.graphql.org/}{\texttt{ Graph\+QL Foundation}}.
+
+This project uses a \href{http://github.com/graphql-dotnet/parser}{\texttt{ lexer/parser}} originally written by \href{https://github.com/mkmarek}{\texttt{ Marek Magdziak}} and released with a MIT license. Thank you Marek!
+
+Provides the following packages\+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Package   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Downloads   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Nu\+Get Latest    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Package   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Downloads   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Nu\+Get Latest    }\\\cline{1-3}
+\endhead
+Graph\+QL   &\href{https://www.nuget.org/packages/GraphQL}{\texttt{ }}   &\href{https://www.nuget.org/packages/GraphQL}{\texttt{ }}    \\\cline{1-3}
+Graph\+QL.\+System\+Text\+Json   &\href{https://www.nuget.org/packages/GraphQL.SystemTextJson}{\texttt{ }}   &\href{https://www.nuget.org/packages/GraphQL.SystemTextJson}{\texttt{ }}    \\\cline{1-3}
+Graph\+QL.\+Newtonsoft\+Json   &\href{https://www.nuget.org/packages/GraphQL.NewtonsoftJson}{\texttt{ }}   &\href{https://www.nuget.org/packages/GraphQL.NewtonsoftJson}{\texttt{ }}    \\\cline{1-3}
+Graph\+QL.\+Memory\+Cache   &\href{https://www.nuget.org/packages/GraphQL.MemoryCache}{\texttt{ }}   &\href{https://www.nuget.org/packages/GraphQL.MemoryCache}{\texttt{ }}    \\\cline{1-3}
+Graph\+QL.\+Data\+Loader   &\href{https://www.nuget.org/packages/GraphQL.DataLoader}{\texttt{ }}   &\href{https://www.nuget.org/packages/GraphQL.DataLoader}{\texttt{ }}    \\\cline{1-3}
+Graph\+QL.\+Microsoft\+DI   &\href{https://www.nuget.org/packages/GraphQL.MicrosoftDI}{\texttt{ }}   &\href{https://www.nuget.org/packages/GraphQL.MicrosoftDI}{\texttt{ }}   \\\cline{1-3}
+\end{longtabu}
+
+
+You can get all preview versions from \href{https://github.com/orgs/graphql-dotnet/packages?repo_name=graphql-dotnet}{\texttt{ Git\+Hub Packages}}. Note that Git\+Hub requires authentication to consume the feed. See \href{https://docs.github.com/en/free-pro-team@latest/packages/publishing-and-managing-packages/about-github-packages\#authenticating-to-github-packages}{\texttt{ here}}.\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md38}{}\doxysection{\texorpdfstring{Documentation}{Documentation}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md38}
+
+\begin{DoxyEnumerate}
+\item \href{http://graphql-dotnet.github.io}{\texttt{ http\+://graphql-\/dotnet.\+github.\+io}} -\/ documentation site that is built from the \href{/docs2/site/}{\texttt{ docs}} folder in the {\ttfamily master} branch.
+\item \href{https://graphql.org/learn}{\texttt{ https\+://graphql.\+org/learn}} -\/ learn about Graph\+QL, how it works, and how to use it.
+\end{DoxyEnumerate}\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md39}{}\doxysection{\texorpdfstring{Debugging}{Debugging}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md39}
+All packages generated from this repository come with embedded pdb and support \href{https://github.com/dotnet/sourcelink}{\texttt{ Source Link}}. If you are having difficulty understanding how the code works or have encountered an error, then it is just enough to enable Source Link in your IDE settings. Then you can debug Graph\+QL.\+NET source code as if it were part of your project.\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md40}{}\doxysection{\texorpdfstring{Installation}{Installation}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md40}
+\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md41}{}\doxysubsubsection{\texorpdfstring{1. Graph\+QL.\+NET engine}{1. Graph\+QL.\+NET engine}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md41}
+This is the main package, the heart of the repository in which you can find all the necessary classes for Graph\+QL request processing.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{>\ dotnet\ add\ package\ GraphQL}
+
+\end{DoxyCode}
+\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md42}{}\doxysubsubsection{\texorpdfstring{2. Serialization}{2. Serialization}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md42}
+For serialized results, you\textquotesingle{}ll need an {\ttfamily IGraph\+QLSerializer} implementation. We provide several serializers (or you can bring your own).
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{>\ dotnet\ add\ package\ GraphQL.SystemTextJson}
+\DoxyCodeLine{>\ dotnet\ add\ package\ GraphQL.NewtonsoftJson}
+
+\end{DoxyCode}
+
+
+\begin{quote}
+{\itshape Note\+: You can use {\ttfamily Graph\+QL.\+Newtonsoft\+Json} with .NET Core 3+, just be aware it lacks async writing capabilities so writing to an ASP.\+NET Core 3.\+0 {\ttfamily Http\+Response.\+Body} will require you to set {\ttfamily Allow\+Synchronous\+IO} to {\ttfamily true} as per \href{https://github.com/aspnet/Announcements/issues/342}{\texttt{ this announcement}}; which isn\textquotesingle{}t recommended.} \end{quote}
+\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md43}{}\doxysubsubsection{\texorpdfstring{3. Document Caching}{3. Document Caching}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md43}
+The recommended way to setup caching layer (for caching of parsed Graph\+QL documents) is to inherit from {\ttfamily IConfigure\+Execution} interface and register your class as its implementation. We provide in-\/memory implementation on top of {\ttfamily Microsoft.\+Extensions.\+Caching.\+Memory} package.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{>\ dotnet\ add\ package\ GraphQL.MemoryCache}
+
+\end{DoxyCode}
+
+
+For more information see \href{https://graphql-dotnet.github.io/docs/guides/document-caching}{\texttt{ Document Caching}}.\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md44}{}\doxysubsubsection{\texorpdfstring{4. Data\+Loader}{4. Data\+Loader}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md44}
+Data\+Loader is a generic utility to be used as part of your application\textquotesingle{}s data fetching layer to provide a simplified and consistent API over various remote data sources such as databases or web services via batching and caching.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{>\ dotnet\ add\ package\ GraphQL.DataLoader}
+
+\end{DoxyCode}
+
+
+For more information see \href{https://graphql-dotnet.github.io/docs/guides/dataloader}{\texttt{ Data\+Loader}}.
+
+\begin{quote}
+{\itshape Note\+: Prior to version 4, the contents of this package was part of the main Graph\+QL.\+NET package.} \end{quote}
+\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md45}{}\doxysubsubsection{\texorpdfstring{5. Subscriptions}{5. Subscriptions}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md45}
+{\ttfamily Document\+Executer} can handle subscriptions as well as queries and mutations. For more information see \href{https://graphql-dotnet.github.io/docs/getting-started/subscriptions}{\texttt{ Subscriptions}}.\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md46}{}\doxysubsubsection{\texorpdfstring{6. Advanced Dependency Injection}{6. Advanced Dependency Injection}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md46}
+Also we provide some extra classes for advanced dependency injection usage on top of {\ttfamily Microsoft.\+Extensions.\+Dependency\+Injection.\+Abstractions} package.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{>\ dotnet\ add\ package\ GraphQL.MicrosoftDI}
+
+\end{DoxyCode}
+
+
+For more information see \href{https://graphql-dotnet.github.io/docs/getting-started/dependency-injection\#thread-safety-with-scoped-services}{\texttt{ Thread safety with scoped services}}.\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md47}{}\doxysection{\texorpdfstring{Examples}{Examples}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md47}
+\href{https://github.com/graphql-dotnet/examples}{\texttt{ https\+://github.\+com/graphql-\/dotnet/examples}}
+
+You can also try an example of Graph\+QL demo server inside this repo -\/ \href{src/GraphQL.Harness/GraphQL.Harness.csproj}{\texttt{ Graph\+QL.\+Harness}}. It supports the popular IDEs for managing Graph\+QL requests and exploring Graph\+QL schema\+:
+\begin{DoxyItemize}
+\item \href{https://github.com/imolorhe/altair}{\texttt{ Altair}}
+\item \href{https://firecamp.io/graphql/}{\texttt{ Firecamp}}
+\item \href{https://github.com/graphql/graphiql}{\texttt{ Graphi\+QL}}
+\item \href{https://github.com/prisma-labs/graphql-playground}{\texttt{ Graph\+QL Playground}}
+\item \href{https://github.com/APIs-guru/graphql-voyager}{\texttt{ Voyager}}
+\end{DoxyItemize}\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md48}{}\doxysection{\texorpdfstring{Ahead-\/of-\/time compilation}{Ahead-\/of-\/time compilation}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md48}
+Graph\+QL.\+NET supports ahead-\/of-\/time (AOT) compilation for execution of code-\/first schemas with .NET 7. This allows for use within i\+OS and Android apps, as well as other environments where such features as JIT compilation or dynamic code generation are not available. It may be necessary to explicitly instruct the AOT compiler to include the .NET types necessary for your schema to operate correctly. Of particular note, your query, mutation and subscription types\textquotesingle{} constructors may be trimmed; register them in your DI engine to prevent this. Also, {\ttfamily Field(x =\texorpdfstring{$>$}{>} x.\+My\+Field)} for enumeration values will require manually adding a mapping reference via {\ttfamily Register\+Type\+Mapping\texorpdfstring{$<$}{<}My\+Enum, Enumeration\+Graph\+Type\texorpdfstring{$<$}{<}My\+Enum\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}()}. Please see the {\ttfamily Graph\+QL.\+Aot\+Compilation\+Sample} for a simple demonstration of AOT compilation. Schema-\/first and type-\/first schemas have additional limtations and configuration requirements. AOT compilation has not been tested with frameworks other than .NET 7 on Windows and Linux (e.\+g. Xamarin).\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md49}{}\doxysection{\texorpdfstring{Training}{Training}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md49}
+
+\begin{DoxyItemize}
+\item \href{https://www.lynda.com/NET-tutorials/API-Development-NET-GraphQL/664823-2.html}{\texttt{ API Development in .NET with Graph\+QL}} -\/ \href{https://twitter.com/gblock}{\texttt{ Glenn Block}} demonstrates how to use the Graph\+QL.\+NET framework to build a fully functional Graph\+QL endpoint.
+\item \href{https://app.pluralsight.com/library/courses/building-graphql-apis-aspdotnet-core/table-of-contents}{\texttt{ Building Graph\+QL APIs with ASP.\+NET Core}} by \href{https://github.com/RolandGuijt}{\texttt{ Roland Guijt}}
+\end{DoxyItemize}\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md50}{}\doxysection{\texorpdfstring{Upgrade Guides}{Upgrade Guides}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md50}
+You can see the changes in public APIs using \href{https://www.fuget.org/packages/GraphQL/7.0.0/lib/netstandard2.0/diff/5.3.3/}{\texttt{ fuget.\+org}}.
+
+
+\begin{DoxyItemize}
+\item \href{https://graphql-dotnet.github.io/docs/migrations/migration7}{\texttt{ 5.\+x to 7.\+x}}
+\item \href{https://graphql-dotnet.github.io/docs/migrations/migration5}{\texttt{ 4.\+x to 5.\+x}}
+\item \href{https://graphql-dotnet.github.io/docs/migrations/migration4}{\texttt{ 3.\+x to 4.\+x}}
+\item \href{https://graphql-dotnet.github.io/docs/migrations/migration3}{\texttt{ 2.\+4.\+x to 3.\+x}}
+\item \href{https://graphql-dotnet.github.io/docs/migrations/migration2}{\texttt{ 0.\+17.\+x to 2.\+x}}
+\item \href{https://graphql-dotnet.github.io/docs/migrations/v0_11_0}{\texttt{ 0.\+11.\+0}}
+\item \href{https://graphql-dotnet.github.io/docs/migrations/v0_8_0}{\texttt{ 0.\+8.\+0}}
+\end{DoxyItemize}\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md51}{}\doxysection{\texorpdfstring{Basic Usage}{Basic Usage}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md51}
+Define your schema with a top level query object then execute that query.
+
+Fully-\/featured examples can be found \href{https://github.com/graphql-dotnet/examples}{\texttt{ here}}.\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md52}{}\doxysubsection{\texorpdfstring{Hello World}{Hello World}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md52}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\textcolor{keyword}{using\ }System.Threading.Tasks;}
+\DoxyCodeLine{\textcolor{keyword}{using\ }GraphQL;}
+\DoxyCodeLine{\textcolor{keyword}{using\ }GraphQL.Types;}
+\DoxyCodeLine{\textcolor{keyword}{using\ }GraphQL.SystemTextJson;\ \textcolor{comment}{//\ First\ add\ PackageReference\ to\ GraphQL.SystemTextJson}}
+\DoxyCodeLine{}
+\DoxyCodeLine{var\ schema\ =\ Schema.For(\textcolor{stringliteral}{@"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ type\ Query\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ hello:\ String}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{var\ root\ =\ \textcolor{keyword}{new}\ \{\ Hello\ =\ \textcolor{stringliteral}{"{}Hello\ World!"{}}\ \};}
+\DoxyCodeLine{var\ json\ =\ await\ schema.ExecuteAsync(\_\ =>}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \_.Query\ =\ \textcolor{stringliteral}{"{}\{\ hello\ \}"{}};}
+\DoxyCodeLine{\ \ \_.Root\ =\ root;}
+\DoxyCodeLine{\});}
+\DoxyCodeLine{}
+\DoxyCodeLine{Console.WriteLine(json);}
+
+\end{DoxyCode}
+\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md53}{}\doxysubsection{\texorpdfstring{Schema First Approach}{Schema First Approach}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md53}
+This example uses the \href{https://graphql.org/learn/schema/\#type-language}{\texttt{ Graph\+QL schema language}}. See the \href{https://graphql-dotnet.github.io/docs/getting-started/introduction}{\texttt{ documentation}} for more examples and information.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{class\ }Droid}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ Id\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ Name\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{class\ }Query}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ [GraphQLMetadata(\textcolor{stringliteral}{"{}droid"{}})]}
+\DoxyCodeLine{\ \ \textcolor{keyword}{public}\ Droid\ GetDroid()}
+\DoxyCodeLine{\ \ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ Droid\ \{\ Id\ =\ \textcolor{stringliteral}{"{}123"{}},\ Name\ =\ \textcolor{stringliteral}{"{}R2-\/D2"{}}\ \};}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{var\ schema\ =\ Schema.For(\textcolor{stringliteral}{@"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ type\ Droid\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ id:\ ID}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ name:\ String}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ type\ Query\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ droid:\ Droid}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}},\ \_\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \_.Types.Include<Query>();}
+\DoxyCodeLine{\});}
+\DoxyCodeLine{}
+\DoxyCodeLine{var\ json\ =\ await\ schema.ExecuteAsync(\_\ =>}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \_.Query\ =\ \textcolor{stringliteral}{"{}\{\ droid\ \{\ id\ name\ \}\ \}"{}};}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md54}{}\doxysubsection{\texorpdfstring{Parameters}{Parameters}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md54}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{class\ }Droid}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ Id\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ Name\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{public}\ \textcolor{keyword}{class\ }Query}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \textcolor{keyword}{private}\ List<Droid>\ \_droids\ =\ \textcolor{keyword}{new}\ List<Droid>}
+\DoxyCodeLine{\ \ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{new}\ Droid\ \{\ Id\ =\ \textcolor{stringliteral}{"{}123"{}},\ Name\ =\ \textcolor{stringliteral}{"{}R2-\/D2"{}}\ \}}
+\DoxyCodeLine{\ \ \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ [GraphQLMetadata(\textcolor{stringliteral}{"{}droid"{}})]}
+\DoxyCodeLine{\ \ \textcolor{keyword}{public}\ Droid\ GetDroid(\textcolor{keywordtype}{string}\ \textcolor{keywordtype}{id})}
+\DoxyCodeLine{\ \ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \_droids.FirstOrDefault(x\ =>\ x.Id\ ==\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{var\ schema\ =\ Schema.For(\textcolor{stringliteral}{@"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ type\ Droid\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ id:\ ID}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ name:\ String}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ type\ Query\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ droid(id:\ ID):\ Droid}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}},\ \_\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \_.Types.Include<Query>();}
+\DoxyCodeLine{\});}
+\DoxyCodeLine{}
+\DoxyCodeLine{var\ json\ =\ await\ schema.ExecuteAsync(\_\ =>}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \_.Query\ =\ \$\textcolor{stringliteral}{"{}\{\{\ droid(id:\ \(\backslash\)"{}123\(\backslash\)"{})\ \{\{\ id\ name\ \}\}\ \}\}"{}};}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md55}{}\doxysection{\texorpdfstring{Roadmap}{Roadmap}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md55}
+\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md56}{}\doxysubsection{\texorpdfstring{Grammar / AST}{Grammar / AST}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md56}
+
+\begin{DoxyItemize}
+\item Grammar and AST for the Graph\+QL language should be compatible with the \href{https://spec.graphql.org/October2021/}{\texttt{ October 2021 specification}}.
+\end{DoxyItemize}\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md57}{}\doxysubsection{\texorpdfstring{Operation Execution}{Operation Execution}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md57}
+
+\begin{DoxyItemize}
+\item \mbox{[}x\mbox{]} Scalars
+\item \mbox{[}x\mbox{]} Objects
+\item \mbox{[}x\mbox{]} Lists of objects/interfaces
+\item \mbox{[}x\mbox{]} Interfaces
+\item \mbox{[}x\mbox{]} Unions
+\item \mbox{[}x\mbox{]} Arguments
+\item \mbox{[}x\mbox{]} Variables
+\item \mbox{[}x\mbox{]} Fragments
+\item \mbox{[}x\mbox{]} Directives
+\begin{DoxyItemize}
+\item \mbox{[}x\mbox{]} Include
+\item \mbox{[}x\mbox{]} Skip
+\item \mbox{[}x\mbox{]} Custom
+\end{DoxyItemize}
+\item \mbox{[}x\mbox{]} Enumerations
+\item \mbox{[}x\mbox{]} Input Objects
+\item \mbox{[}x\mbox{]} Mutations
+\item \mbox{[}x\mbox{]} Subscriptions
+\item \mbox{[}x\mbox{]} Async execution
+\end{DoxyItemize}\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md58}{}\doxysubsection{\texorpdfstring{Validation}{Validation}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md58}
+
+\begin{DoxyItemize}
+\item \mbox{[}x\mbox{]} Arguments of correct type
+\item \mbox{[}x\mbox{]} Default values of correct type
+\item \mbox{[}x\mbox{]} Fields on correct type
+\item \mbox{[}x\mbox{]} Fragments on composite types
+\item \mbox{[}x\mbox{]} Known argument names
+\item \mbox{[}x\mbox{]} Known directives
+\item \mbox{[}x\mbox{]} Known fragment names
+\item \mbox{[}x\mbox{]} Known type names
+\item \mbox{[}x\mbox{]} Lone anonymous operations
+\item \mbox{[}x\mbox{]} No fragment cycles
+\item \mbox{[}x\mbox{]} No undefined variables
+\item \mbox{[}x\mbox{]} No unused fragments
+\item \mbox{[}x\mbox{]} No unused variables
+\item \mbox{[}x\mbox{]} Overlapping fields can be merged
+\item \mbox{[}x\mbox{]} Possible fragment spreads
+\item \mbox{[}x\mbox{]} Provide non-\/null arguments
+\item \mbox{[}x\mbox{]} Scalar leafs
+\item \mbox{[}x\mbox{]} Unique argument names
+\item \mbox{[}x\mbox{]} Unique directives per location
+\item \mbox{[}x\mbox{]} Unique fragment names
+\item \mbox{[}x\mbox{]} Unique input field names
+\item \mbox{[}x\mbox{]} Unique operation names
+\item \mbox{[}x\mbox{]} Unique variable names
+\item \mbox{[}x\mbox{]} Variables are input types
+\item \mbox{[}x\mbox{]} Variables in allowed position
+\item \mbox{[}x\mbox{]} Single root field
+\end{DoxyItemize}\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md59}{}\doxysubsection{\texorpdfstring{Schema Introspection}{Schema Introspection}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md59}
+Graph\+QL.\+NET supports introspection schema from \href{https://spec.graphql.org/October2021/\#sec-Schema-Introspection}{\texttt{ October 2021 spec}} with some additional experimental introspection \href{https://graphql-dotnet.github.io/docs/getting-started/directives\#directives-and-introspection}{\texttt{ extensions}}.\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md60}{}\doxysection{\texorpdfstring{Publishing Nu\+Get packages}{Publishing Nu\+Get packages}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md60}
+The package publishing process is automated with \href{https://github.com/features/actions}{\texttt{ Git\+Hub Actions}}.
+
+After your PR is merged into {\ttfamily master} or {\ttfamily develop}, preview packages are published to \href{https://github.com/orgs/graphql-dotnet/packages?repo_name=graphql-dotnet}{\texttt{ Git\+Hub Packages}}.
+
+Stable versions of packages are published to Nu\+Get when a \href{https://github.com/graphql-dotnet/graphql-dotnet/releases}{\texttt{ release}} is created.\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md61}{}\doxysection{\texorpdfstring{Contributors}{Contributors}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md61}
+This project exists thanks to all the people who contribute. \href{https://github.com/graphql-dotnet/graphql-dotnet/graphs/contributors}{\texttt{ }}
+
+PRs are welcome! Looking for something to work on? The list of \href{https://github.com/graphql-dotnet/graphql-dotnet/issues}{\texttt{ open issues}} is a great place to start. You can help the project simply respond to some of the \href{https://github.com/graphql-dotnet/graphql-dotnet/issues?q=is\%3Aissue+is\%3Aopen+label\%3Aquestion}{\texttt{ asked questions}}.
+
+The default branch is {\ttfamily master}. It is designed for non-\/breaking changes, that is to publish versions 7.\+x.\+x. If you have a PR with some breaking changes, then please target it to the {\ttfamily develop} branch that tracks changes for v8.\+0.\+0.\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md62}{}\doxysection{\texorpdfstring{Backers}{Backers}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md62}
+Thank you to all our backers! 🙏 \href{https://opencollective.com/graphql-net\#backer}{\texttt{ Become a backer}}.
+
+Contributions are very much appreciated and are used to support the project primarily via bounties paid directly to contributors to the project. Please help us to express gratitude to those individuals who devote time and energy to contributing to this project by supporting their efforts in a tangible means. A list of the outstanding issues to which we are sponsoring via bounties can be found \href{https://github.com/graphql-dotnet/graphql-dotnet/issues?q=is\%3Aopen+is\%3Aissue+label\%3Abounty}{\texttt{ here}}.
+
+\href{https://opencollective.com/graphql-net\#backers}{\texttt{ }}\hypertarget{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md63}{}\doxysection{\texorpdfstring{Sponsors}{Sponsors}}\label{md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_graph_q_l_8_analyzers_87_88_80_2_r_e_a_d_m_e_autotoc_md63}
+Support this project by becoming a sponsor. Your logo will show up here with a link to your website. \href{https://opencollective.com/graphql-net\#sponsor}{\texttt{ Become a sponsor}}.
+
+\href{https://opencollective.com/graphql-net/sponsor/0/website}{\texttt{ }} \href{https://opencollective.com/graphql-net/sponsor/1/website}{\texttt{ }} \href{https://opencollective.com/graphql-net/sponsor/2/website}{\texttt{ }} \href{https://opencollective.com/graphql-net/sponsor/3/website}{\texttt{ }} \href{https://opencollective.com/graphql-net/sponsor/4/website}{\texttt{ }} \href{https://opencollective.com/graphql-net/sponsor/5/website}{\texttt{ }} \href{https://opencollective.com/graphql-net/sponsor/6/website}{\texttt{ }} \href{https://opencollective.com/graphql-net/sponsor/7/website}{\texttt{ }} \href{https://opencollective.com/graphql-net/sponsor/8/website}{\texttt{ }} \href{https://opencollective.com/graphql-net/sponsor/9/website}{\texttt{ }} 

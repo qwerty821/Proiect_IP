@@ -1,0 +1,379 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_newtonsoft_8_json_813_80_83_2_r_e_a_d_m_e.html"><param name="Name" value="&lt;img src=&quot;https://raw.githubusercontent.com/JamesNK/Newtonsoft.Json/master/Doc/icons/logo.jpg&quot; alt=&quot;Logo&quot;/&gt; Json.NET"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_microsoft_8_bcl_8_asynccff7e78138ba77ecfe4bac21163b0fa8.html"><param name="Name" value="About"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info.html#a59d10c8750f39065670fa5135f688b89"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info.html#a59d10c8750f39065670fa5135f688b89"><param name="Name" value="Pages::MovieInfo"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies.html#ada93541dc2c8f626ca22847db04894d4"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies.html#ada93541dc2c8f626ca22847db04894d4"><param name="Name" value="Pages::Movies"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_page.html#a36bfed194363340bcd0a69bc022203b3"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_page.html#a36bfed194363340bcd0a69bc022203b3"><param name="Name" value="Pages::SearchPage"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect___i_p_1_1_form1.html#a4072bf663e9a4fec381a7bd1a45630d9"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect___i_p_1_1_form1.html#a4072bf663e9a4fec381a7bd1a45630d9"><param name="Name" value="Proiect_IP::Form1"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect___i_p_1_1_form1.html#a84122d3a18041e156374daf8931b7dbe"><param name="Name" value="FirstState()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_pages_1_1_i_state.html#a12be92cf637ff8a83462b6225d3c2932"><param name="Name" value="GetForm()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_pages_1_1_i_state.html#a12be92cf637ff8a83462b6225d3c2932"><param name="Name" value="Pages::IState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html#a34c470491a872f59878d1718bef1f781"><param name="Name" value="GetForm()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html#a34c470491a872f59878d1718bef1f781"><param name="Name" value="Pages::MovieInfoState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html#a03e6f76ab738f442edb679f5f11f3249"><param name="Name" value="GetForm()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html#a03e6f76ab738f442edb679f5f11f3249"><param name="Name" value="Pages::MoviesListState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html#ae86b1e39d9bb7ea9503285071aa2dfbb"><param name="Name" value="GetForm()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html#ae86b1e39d9bb7ea9503285071aa2dfbb"><param name="Name" value="Pages::SearchState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_pages_1_1_i_state.html#ac964961e78a042f72f42bf2d3835fcda"><param name="Name" value="GetLocation()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_pages_1_1_i_state.html#ac964961e78a042f72f42bf2d3835fcda"><param name="Name" value="Pages::IState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info.html#a0f4602583e435b89b121e7bf5e7c481e"><param name="Name" value="GetLocation()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info.html#a0f4602583e435b89b121e7bf5e7c481e"><param name="Name" value="Pages::MovieInfo"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html#a2eb7deaa06198d09981db9377db63f9f"><param name="Name" value="GetLocation()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html#a2eb7deaa06198d09981db9377db63f9f"><param name="Name" value="Pages::MovieInfoState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies.html#a379526cd7a36facbe7d09f03549ac2e3"><param name="Name" value="GetLocation()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies.html#a379526cd7a36facbe7d09f03549ac2e3"><param name="Name" value="Pages::Movies"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html#a10fe1661036b33c18ef03b3b84f64d2b"><param name="Name" value="GetLocation()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html#a10fe1661036b33c18ef03b3b84f64d2b"><param name="Name" value="Pages::MoviesListState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_page.html#a21ffd64f23e7c8a5c8ec4ff6836e5556"><param name="Name" value="GetLocation()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_page.html#a21ffd64f23e7c8a5c8ec4ff6836e5556"><param name="Name" value="Pages::Page"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_page.html#a8464c5c911670990819c1a960c5465b8"><param name="Name" value="GetLocation()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_page.html#a8464c5c911670990819c1a960c5465b8"><param name="Name" value="Pages::SearchPage"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html#ad390ba635ef370f62a6c2107b97cc59d"><param name="Name" value="GetLocation()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html#ad390ba635ef370f62a6c2107b97cc59d"><param name="Name" value="Pages::SearchState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_page.html#a6246bdf6b4b0ea720694754ce721e5f7"><param name="Name" value="GetState()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="md__d_1_2_facultate_2an3_2_i_p_2_proiect_i_p_2_proiect___i_p_2packages_2_newtonsoft_8_json_813_80_83_2_l_i_c_e_n_s_e.html"><param name="Name" value="LICENSE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html#a3994d50ef1f1afb9c0d42c8ebe8a1e9a"><param name="Name" value="MovieInfoState()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_pages.html#a3e807bf972025324f9cba410d19f89edaa28514302631a859d4597607aed5febf"><param name="Name" value="Movie_InfoState"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies.html#ad9764041578a67d52539825698e874b7"><param name="Name" value="Movies()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html#adaf71a26bd1f79a25a9ffc96df634ac7"><param name="Name" value="MoviesListState()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_pages.html#a3e807bf972025324f9cba410d19f89eda3a3adf9df00a70291a09ac1262916d28"><param name="Name" value="Movies_ListState"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_pages.html"><param name="Name" value="Pages"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_pages_1_1_i_state.html"><param name="Name" value="Pages::IState"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_pages_1_1_i_state.html"><param name="Name" value="Pages::IState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_pages_1_1_i_state.html#a12be92cf637ff8a83462b6225d3c2932"><param name="Name" value="GetForm()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_pages_1_1_i_state.html"><param name="Name" value="Pages::IState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_pages_1_1_i_state.html#ac964961e78a042f72f42bf2d3835fcda"><param name="Name" value="GetLocation()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_pages_1_1_i_state.html"><param name="Name" value="Pages::IState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_pages_1_1_i_state.html#a7e952326b322ec6f8d8012894b69c908"><param name="Name" value="SetCallBack(Action&lt; object, States &gt; action)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_pages_1_1_i_state.html"><param name="Name" value="Pages::IState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_pages_1_1_i_state.html#a93925ec5a0fab51f6b6f833c305c5af0"><param name="Name" value="SetLocation(Point p)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_pages_1_1_i_state.html"><param name="Name" value="Pages::IState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_pages_1_1_i_state.html#a1351c3bdc7515516a791fd9f41384e48"><param name="Name" value="Show()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info.html"><param name="Name" value="Pages::MovieInfo"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info.html"><param name="Name" value="Pages::MovieInfo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info.html#a59d10c8750f39065670fa5135f688b89"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info.html"><param name="Name" value="Pages::MovieInfo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info.html#a0f4602583e435b89b121e7bf5e7c481e"><param name="Name" value="GetLocation()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info.html"><param name="Name" value="Pages::MovieInfo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info.html#a959ad1af8e52dffda32033f582205d31"><param name="Name" value="SetCallBack(Action&lt; object, States &gt; action)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info.html"><param name="Name" value="Pages::MovieInfo"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info.html#af8258e1d741318d819a2e98d8457ac32"><param name="Name" value="SetLocation(Point p)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html"><param name="Name" value="Pages::MovieInfoState"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html"><param name="Name" value="Pages::MovieInfoState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html#a34c470491a872f59878d1718bef1f781"><param name="Name" value="GetForm()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html"><param name="Name" value="Pages::MovieInfoState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html#a2eb7deaa06198d09981db9377db63f9f"><param name="Name" value="GetLocation()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html"><param name="Name" value="Pages::MovieInfoState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html#a3994d50ef1f1afb9c0d42c8ebe8a1e9a"><param name="Name" value="MovieInfoState()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html"><param name="Name" value="Pages::MovieInfoState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html#ab526552e2d774662373d0527e85d2e2c"><param name="Name" value="SetCallBack(Action&lt; object, States &gt; action)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html"><param name="Name" value="Pages::MovieInfoState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html#a92bf1abf5250610312dc6b755547f7b9"><param name="Name" value="SetLocation(Point p)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html"><param name="Name" value="Pages::MovieInfoState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html#aa68633b03bb301f952035ed3d8b95808"><param name="Name" value="Show()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies.html"><param name="Name" value="Pages::Movies"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies.html"><param name="Name" value="Pages::Movies"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies.html#ada93541dc2c8f626ca22847db04894d4"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies.html"><param name="Name" value="Pages::Movies"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies.html#a379526cd7a36facbe7d09f03549ac2e3"><param name="Name" value="GetLocation()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies.html"><param name="Name" value="Pages::Movies"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies.html#ad9764041578a67d52539825698e874b7"><param name="Name" value="Movies()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies.html"><param name="Name" value="Pages::Movies"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies.html#ad0c1f5b51965505546f78ef6c727c096"><param name="Name" value="SetCallBack(Action&lt; object, States &gt; action)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies.html"><param name="Name" value="Pages::Movies"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies.html#ace0a20ef3c66d190d0485cdd1eb9a92d"><param name="Name" value="SetLocation(Point p)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html"><param name="Name" value="Pages::MoviesListState"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html"><param name="Name" value="Pages::MoviesListState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html#a03e6f76ab738f442edb679f5f11f3249"><param name="Name" value="GetForm()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html"><param name="Name" value="Pages::MoviesListState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html#a10fe1661036b33c18ef03b3b84f64d2b"><param name="Name" value="GetLocation()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html"><param name="Name" value="Pages::MoviesListState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html#adaf71a26bd1f79a25a9ffc96df634ac7"><param name="Name" value="MoviesListState()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html"><param name="Name" value="Pages::MoviesListState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html#ae69b31555d3fbd7bfb32a895addbeffe"><param name="Name" value="SetCallBack(Action&lt; object, States &gt; action)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html"><param name="Name" value="Pages::MoviesListState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html#a103d7f7b27c09858ec4ad55f8cfd49b2"><param name="Name" value="SetLocation(Point p)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html"><param name="Name" value="Pages::MoviesListState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html#aab93f1801ac7a9454f846ccb9690a3ec"><param name="Name" value="Show()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_page.html"><param name="Name" value="Pages::Page"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_page.html"><param name="Name" value="Pages::Page"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_page.html#a21ffd64f23e7c8a5c8ec4ff6836e5556"><param name="Name" value="GetLocation()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_page.html"><param name="Name" value="Pages::Page"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_page.html#a6246bdf6b4b0ea720694754ce721e5f7"><param name="Name" value="GetState()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_page.html"><param name="Name" value="Pages::Page"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_page.html#a0588b412b40322643e1715f5455c5434"><param name="Name" value="SetLocation(Point p)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_page.html"><param name="Name" value="Pages::Page"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_page.html#a4ad0c5dcc3b7f9f890b8a8141e12187d"><param name="Name" value="SetState(IState state)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_page.html"><param name="Name" value="Pages::Page"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_page.html#aa2b0d77621e23e4e77aa6ff6f283c204"><param name="Name" value="Show()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_page.html"><param name="Name" value="Pages::SearchPage"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_page.html"><param name="Name" value="Pages::SearchPage"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_page.html#a36bfed194363340bcd0a69bc022203b3"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_page.html"><param name="Name" value="Pages::SearchPage"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_page.html#a8464c5c911670990819c1a960c5465b8"><param name="Name" value="GetLocation()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_page.html"><param name="Name" value="Pages::SearchPage"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_page.html#af7d5e0ac06a3501795f27a88cdb2ca66"><param name="Name" value="SearchPage()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_page.html"><param name="Name" value="Pages::SearchPage"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_page.html#a71e6e980c7e18a45fcede8b435421577"><param name="Name" value="SetCallBack(Action&lt; object, States &gt; action)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_page.html"><param name="Name" value="Pages::SearchPage"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_page.html#a9006cfcc6f071ddc3e294b59fa21d193"><param name="Name" value="SetLocation(Point p)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html"><param name="Name" value="Pages::SearchState"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html"><param name="Name" value="Pages::SearchState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html#ae86b1e39d9bb7ea9503285071aa2dfbb"><param name="Name" value="GetForm()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html"><param name="Name" value="Pages::SearchState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html#ad390ba635ef370f62a6c2107b97cc59d"><param name="Name" value="GetLocation()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html"><param name="Name" value="Pages::SearchState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html#aedf7d608d9bc4c02788e18ca2f2072d8"><param name="Name" value="SearchState()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html"><param name="Name" value="Pages::SearchState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html#a7f44436d711b40a5bea86b54c7d60829"><param name="Name" value="SetCallBack(Action&lt; object, States &gt; func)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html"><param name="Name" value="Pages::SearchState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html#aa74ad12cb7c514165328eeb3bb1270d4"><param name="Name" value="SetLocation(Point p)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html"><param name="Name" value="Pages::SearchState"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html#aa6160f793dd098717fc53371513c8992"><param name="Name" value="Show()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_pages.html"><param name="Name" value="Pages"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_pages.html#a3e807bf972025324f9cba410d19f89edaa28514302631a859d4597607aed5febf"><param name="Name" value="Movie_InfoState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_pages.html"><param name="Name" value="Pages"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_pages.html#a3e807bf972025324f9cba410d19f89eda3a3adf9df00a70291a09ac1262916d28"><param name="Name" value="Movies_ListState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_pages.html"><param name="Name" value="Pages"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_pages.html#a3e807bf972025324f9cba410d19f89eda48807add8c9f31dbd9874978185967ac"><param name="Name" value="Search_PageState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_pages.html"><param name="Name" value="Pages"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_pages.html#a3e807bf972025324f9cba410d19f89ed"><param name="Name" value="States"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_proiect___i_p.html"><param name="Name" value="Proiect_IP"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect___i_p_1_1_form1.html"><param name="Name" value="Proiect_IP::Form1"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect___i_p_1_1_form1.html"><param name="Name" value="Proiect_IP::Form1"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect___i_p_1_1_form1.html#a4072bf663e9a4fec381a7bd1a45630d9"><param name="Name" value="Dispose(bool disposing)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect___i_p_1_1_form1.html"><param name="Name" value="Proiect_IP::Form1"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect___i_p_1_1_form1.html#a84122d3a18041e156374daf8931b7dbe"><param name="Name" value="FirstState()"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect___i_p_1_1_form1.html"><param name="Name" value="Proiect_IP::Form1"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect___i_p_1_1_form1.html#a716d2e9104af710271ef3a8dcbf20af6"><param name="Name" value="changeState(object sender, States state)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_proiect___i_p_1_1_properties.html"><param name="Name" value="Proiect_IP::Properties"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect___i_p_1_1_res_1_1_rating_obj.html"><param name="Name" value="Proiect_IP::Res::RatingObj"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_resources.html"><param name="Name" value="Resources"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_resources_1_1_properties.html"><param name="Name" value="Resources::Properties"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_page.html#af7d5e0ac06a3501795f27a88cdb2ca66"><param name="Name" value="SearchPage()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html#aedf7d608d9bc4c02788e18ca2f2072d8"><param name="Name" value="SearchState()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_pages.html#a3e807bf972025324f9cba410d19f89eda48807add8c9f31dbd9874978185967ac"><param name="Name" value="Search_PageState"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_pages_1_1_i_state.html#a7e952326b322ec6f8d8012894b69c908"><param name="Name" value="SetCallBack(Action&lt; object, States &gt; action)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_pages_1_1_i_state.html#a7e952326b322ec6f8d8012894b69c908"><param name="Name" value="Pages::IState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info.html#a959ad1af8e52dffda32033f582205d31"><param name="Name" value="SetCallBack(Action&lt; object, States &gt; action)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info.html#a959ad1af8e52dffda32033f582205d31"><param name="Name" value="Pages::MovieInfo"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html#ab526552e2d774662373d0527e85d2e2c"><param name="Name" value="SetCallBack(Action&lt; object, States &gt; action)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html#ab526552e2d774662373d0527e85d2e2c"><param name="Name" value="Pages::MovieInfoState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies.html#ad0c1f5b51965505546f78ef6c727c096"><param name="Name" value="SetCallBack(Action&lt; object, States &gt; action)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies.html#ad0c1f5b51965505546f78ef6c727c096"><param name="Name" value="Pages::Movies"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html#ae69b31555d3fbd7bfb32a895addbeffe"><param name="Name" value="SetCallBack(Action&lt; object, States &gt; action)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html#ae69b31555d3fbd7bfb32a895addbeffe"><param name="Name" value="Pages::MoviesListState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_page.html#a71e6e980c7e18a45fcede8b435421577"><param name="Name" value="SetCallBack(Action&lt; object, States &gt; action)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_page.html#a71e6e980c7e18a45fcede8b435421577"><param name="Name" value="Pages::SearchPage"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html#a7f44436d711b40a5bea86b54c7d60829"><param name="Name" value="SetCallBack(Action&lt; object, States &gt; func)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_pages_1_1_i_state.html#a93925ec5a0fab51f6b6f833c305c5af0"><param name="Name" value="SetLocation(Point p)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_pages_1_1_i_state.html#a93925ec5a0fab51f6b6f833c305c5af0"><param name="Name" value="Pages::IState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info.html#af8258e1d741318d819a2e98d8457ac32"><param name="Name" value="SetLocation(Point p)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info.html#af8258e1d741318d819a2e98d8457ac32"><param name="Name" value="Pages::MovieInfo"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html#a92bf1abf5250610312dc6b755547f7b9"><param name="Name" value="SetLocation(Point p)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html#a92bf1abf5250610312dc6b755547f7b9"><param name="Name" value="Pages::MovieInfoState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies.html#ace0a20ef3c66d190d0485cdd1eb9a92d"><param name="Name" value="SetLocation(Point p)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies.html#ace0a20ef3c66d190d0485cdd1eb9a92d"><param name="Name" value="Pages::Movies"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html#a103d7f7b27c09858ec4ad55f8cfd49b2"><param name="Name" value="SetLocation(Point p)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html#a103d7f7b27c09858ec4ad55f8cfd49b2"><param name="Name" value="Pages::MoviesListState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_page.html#a0588b412b40322643e1715f5455c5434"><param name="Name" value="SetLocation(Point p)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_page.html#a0588b412b40322643e1715f5455c5434"><param name="Name" value="Pages::Page"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_page.html#a9006cfcc6f071ddc3e294b59fa21d193"><param name="Name" value="SetLocation(Point p)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_page.html#a9006cfcc6f071ddc3e294b59fa21d193"><param name="Name" value="Pages::SearchPage"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html#aa74ad12cb7c514165328eeb3bb1270d4"><param name="Name" value="SetLocation(Point p)"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html#aa74ad12cb7c514165328eeb3bb1270d4"><param name="Name" value="Pages::SearchState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_page.html#a4ad0c5dcc3b7f9f890b8a8141e12187d"><param name="Name" value="SetState(IState state)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_pages_1_1_i_state.html#a1351c3bdc7515516a791fd9f41384e48"><param name="Name" value="Show()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_pages_1_1_i_state.html#a1351c3bdc7515516a791fd9f41384e48"><param name="Name" value="Pages::IState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html#aa68633b03bb301f952035ed3d8b95808"><param name="Name" value="Show()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movie_info_state.html#aa68633b03bb301f952035ed3d8b95808"><param name="Name" value="Pages::MovieInfoState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html#aab93f1801ac7a9454f846ccb9690a3ec"><param name="Name" value="Show()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_movies_list_state.html#aab93f1801ac7a9454f846ccb9690a3ec"><param name="Name" value="Pages::MoviesListState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_page.html#aa2b0d77621e23e4e77aa6ff6f283c204"><param name="Name" value="Show()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_page.html#aa2b0d77621e23e4e77aa6ff6f283c204"><param name="Name" value="Pages::Page"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html#aa6160f793dd098717fc53371513c8992"><param name="Name" value="Show()"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_pages_1_1_search_state.html#aa6160f793dd098717fc53371513c8992"><param name="Name" value="Pages::SearchState"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_pages.html#a3e807bf972025324f9cba410d19f89ed"><param name="Name" value="States"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespace_unit_test_project___i_p.html"><param name="Name" value="UnitTestProject_IP"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_unit_test_project___i_p_1_1_unit_test1.html"><param name="Name" value="UnitTestProject_IP::UnitTest1"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_proiect___i_p_1_1_form1.html#a716d2e9104af710271ef3a8dcbf20af6"><param name="Name" value="changeState(object sender, States state)"></OBJECT>
+</UL>
+</BODY>
+</HTML>
