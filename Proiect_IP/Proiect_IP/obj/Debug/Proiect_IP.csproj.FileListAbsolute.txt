@@ -150,8 +150,6 @@ D:\Facultate\an3\IP\ProiectIP\Proiect_IP\Proiect_IP\obj\Debug\Proiect_IP.csproj.
 C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Proiect_IP\bin\Debug\Proiect_IP.exe.config
 C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Proiect_IP\bin\Debug\Proiect_IP.exe
 C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Proiect_IP\bin\Debug\Proiect_IP.pdb
-C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Proiect_IP\bin\Debug\GraphQL.dll
-C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Proiect_IP\bin\Debug\GraphQLParser.dll
 C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Proiect_IP\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Proiect_IP\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Proiect_IP\bin\Debug\Pages.dll
@@ -165,8 +163,6 @@ C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Proiect_IP\bin\Debug\TMDbLib.dl
 C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Proiect_IP\bin\Debug\Resources.dll
 C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Proiect_IP\bin\Debug\Pages.pdb
 C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Proiect_IP\bin\Debug\Pages.dll.config
-C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Proiect_IP\bin\Debug\GraphQL.xml
-C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Proiect_IP\bin\Debug\GraphQLParser.xml
 C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Proiect_IP\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Proiect_IP\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Butnaru\Documents\IP PROIECT\Proiect_IP\Proiect_IP\bin\Debug\System.Buffers.xml
